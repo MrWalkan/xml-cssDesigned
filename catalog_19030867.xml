@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- XML Prolog Declaration  -->
+
+<!-- <!DOCTYPE tuca_Root SYSTEM "catalog_19030867.dtd"> -->
+
+<!-- Stylesheet Declartion is an XML processing instruction and is a part of XML prolog which is used to link CSS in below context -->
+<?xml-stylesheet type="text/css" href="catalog_19030867.css"?>
+<!-- root Element -->
+<!-- for DTD  -->
+<!-- <tuca_Root xmlns="http//www.w3schools.com"> -->
+<tuca_Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="catalog_19030867.xsd"
+>
+	<!-- tuca_Store is an Element, moreover division containing important details about the Store -->
+	<!-- It is also references an background image in CSS -->
+	<tuca_Store source="img0">
+		<!-- It references a logo image for the Store -->
+		<tuca_StoreLogo source="img01" />
+		<!-- It represents the name/title of the store -->
+		<tuca_StoreName>Tune Casket</tuca_StoreName>
+		<!-- It represents the name of the Owner of the Store with the sex info -->
+		<tuca_Owner sex="Female">Ramani Shrestha</tuca_Owner>
+		<!-- It represents the location of the Store -->
+		<tuca_Address country="NP">Bigc Complex, Naxal, Kathmandu</tuca_Address>
+		<!-- It represents the website address URL of the Store -->
+		<tuca_WebsiteAddress>www.tunecasket.com.np</tuca_WebsiteAddress>
+		<!-- It represents the contact details to communicate with the store over distance -->
+		<tuca_ContactDetails>
+			<!-- It represents the telephone number associated with the store -->
+			<!-- A Store can have multiple telephone numbers -->
+			<tuca_TelephoneNumber>01-7359320</tuca_TelephoneNumber>
+			<tuca_TelephoneNumber>01-2482012</tuca_TelephoneNumber>
+			<!-- It represents an available email of the store for any inquiry -->
+			<tuca_Email>query@tuca.com.np</tuca_Email>
+		</tuca_ContactDetails>
+		<!-- It represents a detail description about the store -->
+		<tuca_StoreDescription>For over 30 years, The Music Store has been in its new site. Formerly known as Tune Casket, the new owners Ramani Shrestha and Bishal Gharti Chhetri, bought the shop in 1993 and renamed it The Music Store. Garber Music began in a 2,000-square-foot space with three teaching studios and a small collection of books, instruments, and accessories. The Music Store has expanded to 5,000 square feet and now has 28 Practice Rooms/Studios with a total of 20 instructors. We have one of Nepal's best sheet music collections, 16 guitar and amplifier lines, band and orchestra instruments, accessories, rentals, and a repair shop, as well as 16 guitar and amplifier lines, band and orchestra instruments, accessories, rentals, and a repair shop. Online shopping, teacher workshops, sheet music research services, and news alerts via e-mail news blasts and event invites (subscribe below), Twitter, Instagram, and Facebook are also available. The Music Store has grown significantly over time. However, we have remained committed to providing excellent education, high-quality goods, and outstanding customer service. If you are a teacher, admin, parent, or student, we consider ourselves to be your music education partner. Come in and join the family at The Music Store. We are excited to be of service to you.Staff members who specialize in guitar, trumpet, percussion, upright bass, and piano performance can be found in our instrument section. Others have finished their educations while others are still in school. All takes part in bands or sacred settings. Each member of our staff has extensive musical expertise and experience, which they put to good use in assisting you in your quest for instruments, sheet music, lessons, rentals, or repairs. With every purchase, we take pride in being able to answer your questions, even if we have to do some homework, provide you with truthful, trustworthy advice, and make you feel like you have the support of family. We anticipate your arrival.</tuca_StoreDescription>
+	</tuca_Store>
+
+	<!-- tuca_AudioInventory is an Another division to store Audio Albums details. -->
+	<tuca_AudioInventory>
+		<!-- It represents an Audio Album and has further details available in its attribute and child-elements -->
+		<!-- A Music Store can have 0 or many Audio Albums in their Inventory -->
+		<tuca_Album language="Nepali" albumID="AWA01" available="true">
+			<!-- It represents the type of Album like EP(Extended play), Studio, Live, Compilation, Single etc. -->
+			<tuca_AlbumType>EP</tuca_AlbumType>
+			<!-- It represents an Album cover image for the given Audio Album -->
+			<tuca_Cover source="img1" />
+			<!-- It represents the name/title of the Album -->
+			<tuca_Title>Sketches of Darjeeling</tuca_Title>
+			<!-- It represents the Genre of the Album -->
+			<!-- An Album can have multiple Genre for different musics -->
+			<tuca_Genre>Folk</tuca_Genre>
+			<!-- It represents the name of the producer(s) who produced the Songs/Musics of the album -->
+			<!-- An Album Music/Song can have 0 or many Producer(s) -->
+			<tuca_Producer>Bipul Chetri</tuca_Producer>
+			<!-- It represents the name of Composer(s) who composed the music of the Song -->
+			<!-- An album is composed by 0 or many Composer(s) -->
+			<tuca_Composer>Bishal Gharti Chhetri</tuca_Composer>
+			<!-- It represents the writer of the Song commonly known as the lyricist -->
+			<!-- An Album Song is written by many Writers/Lyricists -->
+			<tuca_Writer>Bipul Chetri</tuca_Writer>
+			<!-- It represents the artist or singer who performed the song -->
+			<!-- An Album can have 0 or more number of Artists -->
+			<tuca_Artist role="Main">Bipul Chetri</tuca_Artist>
+			<!-- It represents the studio where the music was recorded -->
+			<!-- Each Song/Music in the Album could be recorded in one or many recording studios -->
+			<tuca_Studio>Plug n' Play Studios</tuca_Studio>
+			<!-- IT represents a company who markets/publishes the music/song/album including their copyright enforcement -->
+			<tuca_RecordCompany>OKListen Media</tuca_RecordCompany>
+			<!-- It represent the date when the album was released -->
+			<tuca_ReleaseDate>2014-07-25</tuca_ReleaseDate>
+			<!-- It represents a discription detail of the Album -->
+			<tuca_Description>In the beginning of 2013, a song exploded like flames around the Internet. It was appropriately named ‘Wildfire/Dadhelo.' The overwhelming positive feedback from listeners, as well as the pace at which this tuca Song was added to everyone's playlist, laid the groundwork for "Sketches of Darjeeling. With his song "Wildfire (Dadelo)," Bipul's voice and musical talents were revealed to the planet. In February 2013, it was captured and posted to SoundCloud. Sketches of Darjeeling, his debut album, was built on this basis. Sketches of Darjeeling, his debut album, was well received. On OKListen.Com, an indie retail music site in India, he was the 'Top Selling Artist' in 2014-15, and he was in the Top Ten in 2015-16.  At the Hero Hits FM 91.2 Awards."</tuca_Description>
+			<!-- It represents the technical specificaiton of the Audio or Album Songs -->
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<!-- It represents the number of time the audio was sampled -->
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<!-- It represents the number of bits of audio information in each sample of Sample Rate -->
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<!-- It represents the directional audible perspective of the Album's Songs  -->
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<!-- It is parent of collection of child-Element Song and has total time duaration of the album in HH:MM:SS format -->
+			<tuca_Songs duration="00:21:05">
+				<!-- It represents the size of each Song/Music in MB (MegaByte) and its digital file format-->
+				<tuca_Size format="WAV">212.81 MB</tuca_Size>
+				<!-- It represents an individual song with its track number in the Album -->
+				<tuca_Song track="1/6">
+					<!-- It represents the title/name of a Song -->
+					<tuca_SongTitle>Mountain High</tuca_SongTitle>
+					<!-- It represents the duration of a song olayed untl the end -->
+					<tuca_Duration>00:04:00</tuca_Duration>
+					<!-- It represents the size of an individual song in MiB (MebiByte) -->
+					<tuca_SongSize>40.37 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/6">
+					<tuca_SongTitle>Wildfire (Dadhelo)</tuca_SongTitle>
+					<tuca_Duration>00:03:30</tuca_Duration>
+					<tuca_SongSize>35.32 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/6">
+					<tuca_SongTitle>Asaar</tuca_SongTitle>
+					<tuca_Duration>00:03:49</tuca_Duration>
+					<tuca_SongSize>38.52 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/6">
+					<tuca_SongTitle>Deorali Darah</tuca_SongTitle>
+					<tuca_Duration>00:03:22</tuca_Duration>
+					<tuca_SongSize>33.98 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/6">
+					<tuca_SongTitle>Ram Sailee- Ode to my Father</tuca_SongTitle>
+					<tuca_Duration>00:03:20</tuca_Duration>
+					<tuca_SongSize>33.64 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/6">
+					<tuca_SongTitle>Rail Garee</tuca_SongTitle>
+					<tuca_Duration>00:03:04</tuca_Duration>
+					<tuca_SongSize>30.95 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<!-- It represents the price of the Album in Nepalese Ruppees -->
+			<tuca_Price>3999</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="Japanese" albumID="AWA02" available="true">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img2" />
+			<tuca_Title>言ノ葉</tuca_Title>
+			<tuca_Genre>Pop</tuca_Genre>
+			<tuca_Producer>Motohiro Hata</tuca_Producer>
+			<tuca_Producer>Tomita Lab.</tuca_Producer>
+			<tuca_Producer>皆川真人</tuca_Producer>
+			<tuca_Producer>多田彰文</tuca_Producer>
+			<tuca_Composer>Senri Oe</tuca_Composer>
+			<tuca_Writer>Motohiro Hata</tuca_Writer>
+			<tuca_Writer>Senri Oe</tuca_Writer>
+			<tuca_Artist role="Main">Motohiro Hata</tuca_Artist>
+			<tuca_Studio>Prime Sound Studios</tuca_Studio>
+			<tuca_RecordCompany>アリオラジャパン</tuca_RecordCompany>
+			<tuca_ReleaseDate>2013-05-29</tuca_ReleaseDate>
+			<tuca_Description>This single contains the imags tuca Song and ending theme from Makoto Shinkai's short animation work "The Garden of Words" (Koto-no-Ha-no-Iwa), which has received critical acclaim for works such as "Hoshi no Koe," "5 centimeters per second," and "Children Chasing Stars." The tuca Cover of the ED theme "Rain" (originas tuca Song: Chisato Oe) and the imags tuca Song of the writing down (nes tuca Song) are works in keeping with the world view of the anime "Garden of The Leaves of The Sayings."</tuca_Description>
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:26:47">
+				<tuca_Size format="FLAC">270.34 MB</tuca_Size>
+				<tuca_Song track="1/5">
+					<tuca_SongTitle>言ノ葉</tuca_SongTitle>
+					<tuca_Duration>00:05:03</tuca_Duration>
+					<tuca_SongSize>50.97 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/5">
+					<tuca_SongTitle>Rain</tuca_SongTitle>
+					<tuca_Duration>00:04:53</tuca_Duration>
+					<tuca_SongSize>49.29 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/5">
+					<tuca_SongTitle>Girl - Tomita Lab. Remix</tuca_SongTitle>
+					<tuca_Duration>00:04:22</tuca_Duration>
+					<tuca_SongSize>44.07 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/5">
+					<tuca_SongTitle>言ノ葉 - Backing Track</tuca_SongTitle>
+					<tuca_Duration>00:05:03</tuca_Duration>
+					<tuca_SongSize>50.97 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/5">
+					<tuca_SongTitle>Rain - Long Ver.</tuca_SongTitle>
+					<tuca_Duration>00:07:27</tuca_Duration>
+					<tuca_SongSize>75.19 MiB</tuca_SongSize>
+				</tuca_Song>	
+			</tuca_Songs>
+			<tuca_Price>1499</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="Portuguese" albumID="AWA03" available="true">
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img3" />
+			<tuca_Title>Agora</tuca_Title>
+			<tuca_Genre>Latin</tuca_Genre>
+			<tuca_Producer>Thomas Bartlett</tuca_Producer>
+			<tuca_Producer>Patrick Dillett</tuca_Producer>
+			<tuca_Writer>Bebel Gilberto</tuca_Writer>
+			<tuca_Writer>Jennifer Charles</tuca_Writer>
+			<tuca_Writer>Martnália Mendonça Ferreira</tuca_Writer>
+			<tuca_Writer>Thomas Bartlett</tuca_Writer>
+			<tuca_Artist role="Main">Bebel Gilberto</tuca_Artist>
+			<tuca_Studio>Plug n' Play Studios</tuca_Studio>
+			<tuca_RecordCompany>PIAS Recordings</tuca_RecordCompany>
+			<tuca_ReleaseDate>2020-08-21</tuca_ReleaseDate>
+			<tuca_Description>The lifted head of Bebel Gilberto on the tuca Cover of Agora is not insignificant. This album has sustained her through a difficult time in which she has lost her best friend and mother (the singer Micha in December 2018) in quick succession, followed by the death of her father, the iconic singer and guitarist Joao Gilberto, six months later. Gilberto made his professional solo debut in 1986 with WEA's self-titled EP, which featured "Preciso dizer que te amo," a collaboration with Cazuza and Dé from the Baro Vermelho project. Gilberto moved to Manhattan in 1991, where she still resides, but divides her time between the United States and Brazil. Gilberto was a close associate of Cazuza's and collaborated on many songs with him, including "Amigos de Bar," "Mais Feliz," and "Mulher sem Razo".</tuca_Description>
+			<tuca_AudioQuality bitrate="2304 kbps">
+				<tuca_SampleRate>48.0 Khz</tuca_SampleRate>
+				<tuca_BitDepth>24 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:39:31">
+				<tuca_Size format="WAV">651.21 MB</tuca_Size>
+				<tuca_Song track="1/11">
+					<tuca_SongTitle>Tão Bom</tuca_SongTitle>
+					<tuca_Duration>00:03:27</tuca_Duration>
+					<tuca_SongSize>56.85 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/11">
+					<tuca_SongTitle>Agora</tuca_SongTitle>
+					<tuca_Duration>00:03:06</tuca_Duration>
+					<tuca_SongSize>51.08 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/11">
+					<tuca_SongTitle>Cliché</tuca_SongTitle>
+					<tuca_Duration>00:03:29</tuca_Duration>
+					<tuca_SongSize>57.40 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/11">
+					<tuca_SongTitle>Bolero</tuca_SongTitle>
+					<tuca_Duration>00:04:06</tuca_Duration>
+					<tuca_SongSize>67.56 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/11">
+					<tuca_SongTitle>Essence</tuca_SongTitle>
+					<tuca_Duration>00:04:22</tuca_Duration>
+					<tuca_SongSize>71.96 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/11">
+					<tuca_SongTitle>Na Cara</tuca_SongTitle>
+					<tuca_Duration>00:03:09</tuca_Duration>
+					<tuca_SongSize>51.91 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/11">
+					<tuca_SongTitle>Deixa</tuca_SongTitle>
+					<tuca_Duration>00:03:31</tuca_Duration>
+					<tuca_SongSize>57.95 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/11">
+					<tuca_SongTitle>Raio</tuca_SongTitle>
+					<tuca_Duration>00:03:19</tuca_Duration>
+					<tuca_SongSize>54.65 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/11">
+					<tuca_SongTitle>Yet Another Love Song</tuca_SongTitle>
+					<tuca_Duration>00:03:37</tuca_Duration>
+					<tuca_SongSize>59.60 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="10/11">
+					<tuca_SongTitle>O Que Não Foi Dito</tuca_SongTitle>
+					<tuca_Duration>00:03:39</tuca_Duration>
+					<tuca_SongSize>60.15 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="11/11">
+					<tuca_SongTitle>Transportador</tuca_SongTitle>
+					<tuca_Duration>00:03:46</tuca_Duration>
+					<tuca_SongSize>62.07 MiB</tuca_SongSize>
+				</tuca_Song>				
+			</tuca_Songs>
+			<tuca_Price>4499</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="Spanish" albumID="AWA04" available="false">			
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img4" />
+			<tuca_Title>Doble Vida</tuca_Title>
+			<tuca_Genre>Pop/Rock</tuca_Genre>
+			<tuca_Genre>New wave</tuca_Genre>
+			<tuca_Genre>Alternative</tuca_Genre>
+			<tuca_Band origin="AR" bandID="B01">
+				<tuca_Member>Gustavo Cerati</tuca_Member>
+				<tuca_Member>Zeta Bosio</tuca_Member>
+				<tuca_Member>Charly Alberti</tuca_Member>				
+			</tuca_Band>
+			<tuca_Producer>Carlos Alomar</tuca_Producer>
+			<tuca_Composer>Gustavo Cerati</tuca_Composer>
+			<tuca_Writer>Gustavo Cerati</tuca_Writer>
+			<tuca_Writer>Zeta Bosio</tuca_Writer>
+			<tuca_Writer>Charly Alberti</tuca_Writer>
+			<tuca_Writer>Richard Coleman</tuca_Writer>
+			<tuca_Writer>Carlos Alomar</tuca_Writer>
+			<tuca_Artist role="Main" refBandID="B01">Soda Stereo</tuca_Artist>
+			<tuca_Studio>Sorcerer Sound Recording Studios</tuca_Studio>
+			<tuca_RecordCompany>CBS Records International</tuca_RecordCompany>
+			<tuca_ReleaseDate>1988-09-15</tuca_ReleaseDate>
+			<tuca_Description>Soda Stereo began a tour of the success of the new album, which included 30 shows in almost all of Argentina in front of 270,000 viewers during the first days of 1989, which was accompanied by a new Latin American tour (the third), which included mass-consecration to the tuca Band in Mexico, among other items. They released a new version of "Languis" (tuca Song included in Double Life) and a new track named "World of Chimeras" in late 1989, which were included in the maxi-simple Languis (1989), along with remixed versions of "On the Edge" and "What Bleeds (the Tomb)".</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:42:31">
+				<tuca_Size format="WMA">98.05 MB</tuca_Size>
+				<tuca_Song track="1/9">
+					<tuca_SongTitle>Picnic En El 4Â° B</tuca_SongTitle>
+					<tuca_Duration>00:03:41</tuca_Duration>
+					<tuca_SongSize>8.43 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/9">
+					<tuca_SongTitle>En la Ciudad de la Furia</tuca_SongTitle>
+					<tuca_Duration>00:05:52</tuca_Duration>
+					<tuca_SongSize>13.42 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/9">
+					<tuca_SongTitle>Lo Que Sangra (La Cúpula)</tuca_SongTitle>
+					<tuca_Duration>00:04:36</tuca_Duration>
+					<tuca_SongSize>10.52 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/9">
+					<tuca_SongTitle>En el Borde</tuca_SongTitle>
+					<tuca_Duration>00:04:44</tuca_Duration>
+					<tuca_SongSize>10.83 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/9">
+					<tuca_SongTitle>Languis</tuca_SongTitle>
+					<tuca_Duration>00:04:00</tuca_Duration>
+					<tuca_SongSize>9.15 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/9">
+					<tuca_SongTitle>Día Común - Doble Vida</tuca_SongTitle>
+					<tuca_Duration>00:04:41</tuca_Duration>
+					<tuca_SongSize>5.15 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/10">
+					<tuca_SongTitle>Corazón Delator</tuca_SongTitle>
+					<tuca_Duration>00:05:14</tuca_Duration>
+					<tuca_SongSize>11.97 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/9">
+					<tuca_SongTitle>El Ritmo de Tus Ojos</tuca_SongTitle>
+					<tuca_Duration>00:03:59</tuca_Duration>
+					<tuca_SongSize>9.11 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/9">
+					<tuca_SongTitle>Terapia de Amor Intensiva</tuca_SongTitle>
+					<tuca_Duration>00:05:41</tuca_Duration>
+					<tuca_SongSize>13 MiB</tuca_SongSize>
+				</tuca_Song>	
+			</tuca_Songs>
+			<tuca_Price>2499</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="English" albumID="AWA05" available="true">
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img5" />
+			<tuca_Title>Billie Holiday For Lovers</tuca_Title>
+			<tuca_Genre>Jazz</tuca_Genre>
+			<tuca_Genre>Classic</tuca_Genre>
+			<tuca_Producer>Norman Granz</tuca_Producer>
+			<tuca_Producer>Norman Granz</tuca_Producer>
+			<tuca_Writer>John M. Blackburn</tuca_Writer>
+			<tuca_Writer>Karl Suessdorf</tuca_Writer>
+			<tuca_Writer>Lorenz Hart</tuca_Writer>
+			<tuca_Writer>Richard Rodgers</tuca_Writer>
+			<tuca_Writer>George Gershwin</tuca_Writer>
+			<tuca_Writer>Ira Gershwin</tuca_Writer>
+			<tuca_Writer>Dorothy Parker</tuca_Writer>
+			<tuca_Writer>Ralph Rainger</tuca_Writer>
+			<tuca_Writer>Andriamanantena Paul Razafinkarefo</tuca_Writer>
+			<tuca_Writer>Don Redman</tuca_Writer>
+			<tuca_Writer>Kurt Weill</tuca_Writer>
+			<tuca_Writer>Ogden Nash</tuca_Writer>
+			<tuca_Writer>E.Y. Harburg</tuca_Writer>
+			<tuca_Writer>Vernon Duke</tuca_Writer>
+			<tuca_Writer>Edward Heyman</tuca_Writer>
+			<tuca_Writer>Frank Eyton</tuca_Writer>
+			<tuca_Writer>John W. Green</tuca_Writer>
+			<tuca_Writer>Robert</tuca_Writer>
+			<tuca_Writer>Harold Arlen</tuca_Writer>
+			<tuca_Writer>Johnny Mercer</tuca_Writer>
+			<tuca_Writer>Frank S. Perkins</tuca_Writer>
+			<tuca_Writer>Mitchell Parish</tuca_Writer>
+			<tuca_Writer>Carl Fischer</tuca_Writer>
+			<tuca_Writer>Frankie Laine</tuca_Writer>
+			<tuca_Artist role="Main">Billie Holiday</tuca_Artist>
+			<tuca_Studio>Gold Star Studios</tuca_Studio>
+			<tuca_RecordCompany>UMG Recordings</tuca_RecordCompany>
+			<tuca_ReleaseDate>2006-07-26</tuca_ReleaseDate>
+			<tuca_Description>For the album, Granz and Holiday selected popular songs from the Great American Songbook of classic music, with Holiday singing in a context that was familiar to her, a tiny jazz tuca Band. The initial album included six standards, five of which were written by songwriters who would later be included in Ella Fitzgerald's Songbooks trilogy. Holiday was reunited with trumpeter Harry Edison and saxophonist Ben Webster during the sessions, all of whom he had collaborated with in the 1930s and 1940s.</tuca_Description>
+			<tuca_AudioQuality bitrate="1015 kbps">
+				<tuca_SampleRate>96 Khz</tuca_SampleRate>
+				<tuca_BitDepth>24 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:57:58">
+				<tuca_Size format="FLAC">420.82 MB</tuca_Size>
+				<tuca_Song track="1/12">
+					<tuca_SongTitle>Moonlight In Vermont</tuca_SongTitle>
+					<tuca_Duration>00:03:47</tuca_Duration>
+					<tuca_SongSize>27.46 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/12">
+					<tuca_SongTitle>I Didn't Know What Time It Was</tuca_SongTitle>
+					<tuca_Duration>00:05:58</tuca_Duration>
+					<tuca_SongSize>43.31 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/12">
+					<tuca_SongTitle>Embraceable You</tuca_SongTitle>
+					<tuca_Duration>00:06:45</tuca_Duration>
+					<tuca_SongSize>49.00 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/12">
+					<tuca_SongTitle>I Wished On The Moon</tuca_SongTitle>
+					<tuca_Duration>00:03:25</tuca_Duration>
+					<tuca_SongSize>24.80 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/12">
+					<tuca_SongTitle>Gee Baby, Ain't I Good To You</tuca_SongTitle>
+					<tuca_Duration>00:05:34</tuca_Duration>
+					<tuca_SongSize>40.41 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/12">
+					<tuca_SongTitle>Speak Low</tuca_SongTitle>
+					<tuca_Duration>00:04:25</tuca_Duration>
+					<tuca_SongSize>32.06 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/12">
+					<tuca_SongTitle>April In Paris</tuca_SongTitle>
+					<tuca_Duration>00:03:02</tuca_Duration>
+					<tuca_SongSize>22.02 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/12">
+					<tuca_SongTitle>Body And Soul</tuca_SongTitle>
+					<tuca_Duration>00:06:18</tuca_Duration>
+					<tuca_SongSize>45.73 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/12">
+					<tuca_SongTitle>They Can't Take That Away From Me</tuca_SongTitle>
+					<tuca_Duration>00:04:08</tuca_Duration>
+					<tuca_SongSize>30.00 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="10/12">
+					<tuca_SongTitle>One For My Baby (And One More For The Road)</tuca_SongTitle>
+					<tuca_Duration>00:05:38</tuca_Duration>
+					<tuca_SongSize>40.89 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="11/12">
+					<tuca_SongTitle>Stars Fell On Alabama</tuca_SongTitle>
+					<tuca_Duration>00:04:28</tuca_Duration>
+					<tuca_SongSize>32.42 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="12/12">
+					<tuca_SongTitle>We'll Be Together Again</tuca_SongTitle>
+					<tuca_Duration>00:04:23</tuca_Duration>
+					<tuca_SongSize>31.82 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>2899</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="English" albumID="AWA06" available="true">
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img6" />
+			<tuca_Title>Justice</tuca_Title>
+			<tuca_Genre>Pop</tuca_Genre>
+			<!-- It represents the director of the Album who directed the music video -->
+			<!-- An Album can have 0 or more Director at work -->
+			<tuca_Director>Collin Tilley</tuca_Director>
+			<tuca_Producer>Luis Manuel Martinez JR</tuca_Producer>
+			<tuca_Producer>Skrillex</tuca_Producer>
+			<tuca_Producer>Jimmie Gutch</tuca_Producer>
+			<tuca_Producer>Rami Yacoub</tuca_Producer>
+			<tuca_Producer>Tommy Browne</tuca_Producer>
+			<tuca_Producer>Michael Pollack</tuca_Producer>
+			<tuca_Composer>Bishal Gc</tuca_Composer>
+			<tuca_Writer>Justin Bieber</tuca_Writer>
+			<tuca_Writer>Alexander Izquierdo</tuca_Writer>
+			<tuca_Writer>Freddy Wexler</tuca_Writer>
+			<tuca_Writer>Gian Stone</tuca_Writer>
+			<tuca_Writer>Valentine Brunn</tuca_Writer>
+			<tuca_Writer>Josh Gudwin</tuca_Writer>
+			<tuca_Writer>Sonny Moore</tuca_Writer>
+			<tuca_Writer>James Gutch</tuca_Writer>
+			<tuca_Writer>Johnathon Bennett</tuca_Writer>
+			<tuca_Writer>Rami Yacoub</tuca_Writer>
+			<tuca_Writer>Brittant Amaradio</tuca_Writer>
+			<tuca_Artist role="Main">Justin Bieber</tuca_Artist>
+			<tuca_Artist role="Feature">Khalid</tuca_Artist>
+			<tuca_Artist role="Feature">The Kid LAROI</tuca_Artist>
+			<tuca_Artist role="Feature">Bominic Fike</tuca_Artist>
+			<tuca_Artist role="Feature">BEAM</tuca_Artist>
+			<tuca_Artist role="Feature">Burna Boy</tuca_Artist>
+			<tuca_Artist role="Feature">Daniel Caesar &amp; Giveon</tuca_Artist>
+			<tuca_Artist role="Feature">Chance The Rapper</tuca_Artist>
+			<tuca_Studio>Henson Recording Studios</tuca_Studio>
+			<tuca_RecordCompany>Schoolboy Records</tuca_RecordCompany>
+			<tuca_ReleaseDate>2021-03-19</tuca_ReleaseDate>
+			<tuca_Description>Justice is Justin Bieber's widely awaited sixth studio album, after the Grammy Award-winning Changes (2020). Justin ended the year with three hit songs from his Justice album: "Holy," featuring Chance The Rapper, "Lonely," featuring Benny Blanco, and "Anyone," a brand new anthemic track. Through a multi-single release plan, Justin is building up hype for the Justice album's release on March 19th.</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:45:25">
+				<tuca_Size format="Mp3">112.35 MB</tuca_Size>
+				<tuca_Song track="1/16">
+					<tuca_SongTitle>2 Much</tuca_SongTitle>
+					<tuca_Duration>00:02:33</tuca_Duration>
+					<tuca_SongSize>6.34 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/16">
+					<tuca_SongTitle>Deserve You</tuca_SongTitle>
+					<tuca_Duration>00:03:07</tuca_Duration>
+					<tuca_SongSize>7.65 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/16">
+					<tuca_SongTitle>As I Am</tuca_SongTitle>
+					<tuca_Duration>00:02:54</tuca_Duration>
+					<tuca_SongSize>7.16 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/16">
+					<tuca_SongTitle>Off My Face</tuca_SongTitle>
+					<tuca_Duration>00:02:36</tuca_Duration>
+					<tuca_SongSize>6.48 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/16">
+					<tuca_SongTitle>Holy</tuca_SongTitle>
+					<tuca_Duration>00:03:32</tuca_Duration>
+					<tuca_SongSize>8.6 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/16">
+					<tuca_SongTitle>Unstable</tuca_SongTitle>
+					<tuca_Duration>00:02:38</tuca_Duration>
+					<tuca_SongSize>6.55 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/16">
+					<tuca_SongTitle>MLK Interlude</tuca_SongTitle>
+					<tuca_Duration>00:01:44</tuca_Duration>
+					<tuca_SongSize>4.48 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/16">
+					<tuca_SongTitle>Die For You</tuca_SongTitle>
+					<tuca_Duration>00:03:18</tuca_Duration>
+					<tuca_SongSize>8.08 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/16">
+					<tuca_SongTitle>Hold On</tuca_SongTitle>
+					<tuca_Duration>00:02:51</tuca_Duration>
+					<tuca_SongSize>7.03 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="10/16">
+					<tuca_SongTitle>Somebody</tuca_SongTitle>
+					<tuca_Duration>00:02:59</tuca_Duration>
+					<tuca_SongSize>7.35 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="11/16">
+					<tuca_SongTitle>Ghost</tuca_SongTitle>
+					<tuca_Duration>00:02:33</tuca_Duration>
+					<tuca_SongSize>6.35 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="12/16">
+					<tuca_SongTitle>Peaches</tuca_SongTitle>
+					<tuca_Duration>00:03:18</tuca_Duration>
+					<tuca_SongSize>8.07 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="13/16">
+					<tuca_SongTitle>Love You Different</tuca_SongTitle>
+					<tuca_Duration>00:03:07</tuca_Duration>
+					<tuca_SongSize>7.63 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="14/16">
+					<tuca_SongTitle>Loved By You</tuca_SongTitle>
+					<tuca_Duration>00:02:39</tuca_Duration>
+					<tuca_SongSize>6.59 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="15/16">
+					<tuca_SongTitle>Anyone</tuca_SongTitle>
+					<tuca_Duration>00:03:11</tuca_Duration>
+					<tuca_SongSize>7.79 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="16/16">
+					<tuca_SongTitle>Lonely</tuca_SongTitle>
+					<tuca_Duration>00:02:29</tuca_Duration>
+					<tuca_SongSize>6.2 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>3999</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="English" albumID="AWA07" available="false">
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img7" />
+			<tuca_Title>Evermore</tuca_Title>
+			<tuca_Genre>Alternative rock</tuca_Genre>
+			<tuca_Genre>Folk pop</tuca_Genre>
+			<tuca_Genre>Orchestral pop</tuca_Genre>
+			<tuca_Producer>Aaron Dessner</tuca_Producer>
+			<tuca_Producer>Taylor Swift</tuca_Producer>
+			<tuca_Producer>Jack Antonoff</tuca_Producer>
+			<tuca_Producer>Bryce Dessner</tuca_Producer>
+			<tuca_Producer>Bj Burton</tuca_Producer>
+			<tuca_Producer>James McAlister</tuca_Producer>
+			<tuca_Composer>Aaron Dessner</tuca_Composer>
+			<tuca_Composer>Bryce Dessner</tuca_Composer>
+			<tuca_Writer>Taylor Swift</tuca_Writer>
+			<tuca_Writer>Aaron Dessner</tuca_Writer>
+			<tuca_Writer>William Bowery</tuca_Writer>
+			<tuca_Writer>Jack Antonoff</tuca_Writer>
+			<tuca_Writer>Bryce Dessner</tuca_Writer>
+			<tuca_Writer>Justin Vernon</tuca_Writer>
+			<tuca_Artist role="Main">Taylor Swift</tuca_Artist>
+			<tuca_Artist role="Feature">The National</tuca_Artist>
+			<tuca_Artist role="Feature">Bon Iver</tuca_Artist>
+			<tuca_Artist role="Feature">HAIM</tuca_Artist>
+			<tuca_Studio>Long Pond</tuca_Studio>
+			<tuca_Studio>Scarlet Pimpernel</tuca_Studio>
+			<tuca_Studio>Ariel Rechtshaid's house</tuca_Studio>
+			<tuca_RecordCompany>Republic Records</tuca_RecordCompany>
+			<tuca_ReleaseDate>2020-12-11</tuca_ReleaseDate>
+			<tuca_Description>Taylor Swift may now be the goddess of indie folk, after becoming the Princess of Nashville and then the World Queen of Pop. Folklore, a surprise album, was released in the summer of 2020. She performs with Justin Vernon of Bon Iver on an album recorded by Aaron Dessner of the National. It's the ultimate folk counterpoint, with no pop bangers or body-built rhythms, borne by understated instrumentation that includes piano, acoustic guitar, mellotron, mandolin, and slide guitar.</tuca_Description>
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="01:00:38">
+				<tuca_Size format="FLAC">354.90 MB</tuca_Size>
+				<tuca_Song track="1/15">
+					<tuca_SongTitle>willow</tuca_SongTitle>
+					<tuca_Duration>00:03:34</tuca_Duration>
+					<tuca_SongSize>22.78 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/15">
+					<tuca_SongTitle>champagne problems</tuca_SongTitle>
+					<tuca_Duration>00:04:04</tuca_Duration>
+					<tuca_SongSize>21.8 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/15">
+					<tuca_SongTitle>gold rush</tuca_SongTitle>
+					<tuca_Duration>00:03:05</tuca_Duration>
+					<tuca_SongSize>18.22 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/15">
+					<tuca_SongTitle>'tis the damn season</tuca_SongTitle>
+					<tuca_Duration>00:03:50</tuca_Duration>
+					<tuca_SongSize>21.41 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/15">
+					<tuca_SongTitle>tolerate it</tuca_SongTitle>
+					<tuca_Duration>00:04:05</tuca_Duration>
+					<tuca_SongSize>21.79 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/15">
+					<tuca_SongTitle>no body, no crime (feat. HAIM)</tuca_SongTitle>
+					<tuca_Duration>00:03:35</tuca_Duration>
+					<tuca_SongSize>24.39 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/15">
+					<tuca_SongTitle>happiness</tuca_SongTitle>
+					<tuca_Duration>00:05:15</tuca_Duration>
+					<tuca_SongSize>28.43 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/15">
+					<tuca_SongTitle>dorothea</tuca_SongTitle>
+					<tuca_Duration>00:03:46</tuca_Duration>
+					<tuca_SongSize>23.41 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/15">
+					<tuca_SongTitle>coney island (feat. The National)</tuca_SongTitle>
+					<tuca_Duration>00:04:35</tuca_Duration>
+					<tuca_SongSize>26.2 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="10/15">
+					<tuca_SongTitle>ivy</tuca_SongTitle>
+					<tuca_Duration>00:04:20</tuca_Duration>
+					<tuca_SongSize>27.38 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="11/15">
+					<tuca_SongTitle>cowboy like me</tuca_SongTitle>
+					<tuca_Duration>00:04:35</tuca_Duration>
+					<tuca_SongSize>28.18 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="12/15">
+					<tuca_SongTitle>long story short</tuca_SongTitle>
+					<tuca_Duration>00:03:36</tuca_Duration>
+					<tuca_SongSize>21.78 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="13/15">
+					<tuca_SongTitle>marjorie</tuca_SongTitle>
+					<tuca_Duration>00:04:18</tuca_Duration>
+					<tuca_SongSize>25.90 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="14/15">
+					<tuca_SongTitle>closure</tuca_SongTitle>
+					<tuca_Duration>00:03:00</tuca_Duration>
+					<tuca_SongSize>16.87 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="15/15">
+					<tuca_SongTitle>evermore (feat. Bon Iver)</tuca_SongTitle>
+					<tuca_Duration>00:05:04</tuca_Duration>
+					<tuca_SongSize>26.25 MiB</tuca_SongSize>
+				</tuca_Song>				
+			</tuca_Songs>
+			<tuca_Price>4999</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="English" albumID="AWA08" available="false">
+			<tuca_AlbumType>Studio</tuca_AlbumType>
+			<tuca_Cover source="img8" />
+			<tuca_Title>Love Songs For Robots</tuca_Title>
+			<tuca_Genre>Indie</tuca_Genre>
+			<tuca_Genre>Folk</tuca_Genre>
+			<tuca_Genre>Alternative</tuca_Genre>
+			<tuca_Producer>Patrick Watson</tuca_Producer>
+			<tuca_Composer>Patrick Watson</tuca_Composer>
+			<tuca_Writer>Patrick Watson</tuca_Writer>
+			<tuca_Writer>Robbie Kuster</tuca_Writer>
+			<tuca_Writer>Mikhail Stein</tuca_Writer>
+			<tuca_Writer>Joe Grass</tuca_Writer>
+			<tuca_Artist role="Main">Patrick Watson</tuca_Artist>
+			<tuca_Studio>Capitol Studios</tuca_Studio>
+			<tuca_Studio>Pierre Marchand Studios</tuca_Studio>
+			<tuca_RecordCompany>Domino Recording Company</tuca_RecordCompany>
+			<tuca_ReleaseDate>2015-05-11</tuca_ReleaseDate>
+			<tuca_Description>Patrick Watson's shimmery ballads seldom neglect sentiment or affection, despite their complexity and precision: tuca Composer, a Montreal musician, songwriter, multi-instrumentalist, and prolific film-score composer, places every tiny sound in its proper position, but his perfectionism is used with an almost otherworldly grace. As a result, the Polaris Prize winner's latest album's tuca Title, Love Songs For Robots, feels oddly ironic. The band is known for using unusual instruments to make sounds in their music; for example, Watson "played" a bicycle in the studio for the song "Beijing." percussionist Robbie Kuster used two spoons to produce a tremolo picking effect on an acoustic guitar at the start of "Man Like You."</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:49:27">
+				<tuca_Size format="Mp3">113.24 MB</tuca_Size>
+				<tuca_Song track="1/10">
+					<tuca_SongTitle>Love Songs For Robots</tuca_SongTitle>
+					<tuca_Duration>00:03:37</tuca_Duration>
+					<tuca_SongSize>8.29 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/10">
+					<tuca_SongTitle>Good Morning Mr. Wolf</tuca_SongTitle>
+					<tuca_Duration>00:05:56</tuca_Duration>
+					<tuca_SongSize>13.59 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/10">
+					<tuca_SongTitle>Bollywood</tuca_SongTitle>
+					<tuca_Duration>00:06:18</tuca_Duration>
+					<tuca_SongSize>14.46 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/10">
+					<tuca_SongTitle>Hearts</tuca_SongTitle>
+					<tuca_Duration>00:04:52</tuca_Duration>
+					<tuca_SongSize>11.25 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/10">
+					<tuca_SongTitle>Grace</tuca_SongTitle>
+					<tuca_Duration>00:04:43</tuca_Duration>
+					<tuca_SongSize>10.04 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="6/10">
+					<tuca_SongTitle>In Circles</tuca_SongTitle>
+					<tuca_Duration>00:02:16</tuca_Duration>
+					<tuca_SongSize>5.15 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="7/10">
+					<tuca_SongTitle>Turn Into the Noise</tuca_SongTitle>
+					<tuca_Duration>00:06:42</tuca_Duration>
+					<tuca_SongSize>51.5 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="8/11">
+					<tuca_SongTitle>Alone In This World</tuca_SongTitle>
+					<tuca_Duration>00:02:42</tuca_Duration>
+					<tuca_SongSize>6.27 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="9/10">
+					<tuca_SongTitle>Kno That You Know</tuca_SongTitle>
+					<tuca_Duration>00:07:18</tuca_Duration>
+					<tuca_SongSize>16.73 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="10/10">
+					<tuca_SongTitle>Places You will Go</tuca_SongTitle>
+					<tuca_Duration>00:05:03</tuca_Duration>
+					<tuca_SongSize>11.6 MiB</tuca_SongSize>
+				</tuca_Song>		
+			</tuca_Songs>
+			<tuca_Price>2599</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="English" albumID="AWA09" available="true">
+			<tuca_AlbumType>EP</tuca_AlbumType>
+			<tuca_Cover source="img9" />
+			<tuca_Title>The Blue Room</tuca_Title>
+			<tuca_Genre>Alternative Rock</tuca_Genre>
+			<!-- It represents the Band who performed the Album's songs along with its origin -->
+			<tuca_Band origin="ENG" bandID="B02">
+				<!-- It represents the name of Member associated with the Band -->
+				<tuca_Member>Chris Martin</tuca_Member>
+				<tuca_Member>Jonny Buckland</tuca_Member>
+				<tuca_Member>Guy Berryman</tuca_Member>		
+				<tuca_Member>Will Champion</tuca_Member>			
+				<tuca_Member>Phil Harvey</tuca_Member>			
+			</tuca_Band>
+			<tuca_Producer>Chris Allison</tuca_Producer>
+			<tuca_Producer>Nikki Rosetti</tuca_Producer>
+			<tuca_Producer>Coldplay</tuca_Producer>
+			<tuca_Writer>Chris Martin</tuca_Writer>
+			<tuca_Writer>Guy Berryman</tuca_Writer>
+			<tuca_Writer>Jonny Buckland</tuca_Writer>
+			<tuca_Writer>Will Champion</tuca_Writer>
+			<tuca_Artist role="Main" refBandID="B02">Coldplay</tuca_Artist>
+			<tuca_Studio>Sync City Studios</tuca_Studio>
+			<tuca_Studio>Orinoco Studios</tuca_Studio>
+			<tuca_RecordCompany>Parlophone Records Limited</tuca_RecordCompany>
+			<tuca_ReleaseDate>1999-10-11</tuca_ReleaseDate>
+			<tuca_Description>The version of "Don't Panic" on this single, which was recorded by Chris Allison, differs from the one on the tuca Band's later debut album, Parachutes. Chris Allison's fourth single, "High Speed," also made the cut for Parachutes and remained unchanged. The first single, "Bigger Stronger," and the fifth track, "What a Rush," are both re-releases of songs from the Safety EP. The first pressing of the CD version was limited to 5000 copies, including a limited edition 12 inch vinyl print that was individually numbered on the front picture sleeve. In 2001, the CD format was re-released with the same packaging, making it more easily available. In 2007, The Singles 1999–2006 box set featured a 2x7" vinyl edition. The Blue Room was described by AllMusic journalist MacKenzie Wilson as "well-crafted with lush harmonies," with "Martin's harking vocals reflecting common dream pop melodies close to Gene frontman Martin Rossiter," and "Such a Rush" as "outstanding."</tuca_Description>
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:19:33">
+				<tuca_Size format="WAV">197.33 MB</tuca_Size>
+				<tuca_Song track="1/5">
+					<tuca_SongTitle>Bigger Stronger</tuca_SongTitle>
+					<tuca_Duration>00:04:49</tuca_Duration>
+					<tuca_SongSize>48.61 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/5">
+					<tuca_SongTitle>Don't Panic</tuca_SongTitle>
+					<tuca_Duration>00:02:38</tuca_Duration>
+					<tuca_SongSize>26.58 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/5">
+					<tuca_SongTitle>See You Soon</tuca_SongTitle>
+					<tuca_Duration>00:02:51</tuca_Duration>
+					<tuca_SongSize>28.76 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/5">
+					<tuca_SongTitle>High Speed</tuca_SongTitle>
+					<tuca_Duration>00:04:16</tuca_Duration>
+					<tuca_SongSize>43.06 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/5">
+					<tuca_SongTitle>Such a Rush</tuca_SongTitle>
+					<tuca_Duration>00:04:57</tuca_Duration>
+					<tuca_SongSize>49.96 MiB</tuca_SongSize>
+				</tuca_Song>	
+			</tuca_Songs>
+			<tuca_Price>999</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="Spanish" albumID="AWA15" available="true">
+			<tuca_AlbumType>EP</tuca_AlbumType>
+			<tuca_Cover source="img15" />
+			<tuca_Title>I Loved You.</tuca_Title>
+			<tuca_Genre>Alternative Rock</tuca_Genre>
+			<tuca_Genre>Pop</tuca_Genre>
+			<tuca_Band origin="US" bandID="B04">
+				<tuca_Member>Paul Jason Klein</tuca_Member>
+				<tuca_Member>Charles Leslie "Les" Priest</tuca_Member>
+				<tuca_Member>Jake Clifford Goss</tuca_Member>
+			</tuca_Band>
+			<tuca_Producer>Mike Crossey</tuca_Producer>
+			<tuca_Producer>LANY</tuca_Producer>
+			<tuca_Producer>Tyler Johnson</tuca_Producer>
+			<tuca_Producer>Shalom Margaret</tuca_Producer>
+			<tuca_Composer>LANY</tuca_Composer>
+			<tuca_Writer>Paul Jason Klein</tuca_Writer>
+			<tuca_Writer>Tobia Jesso Jr.</tuca_Writer>
+			<tuca_Writer>Sasha Sloan</tuca_Writer>
+			<tuca_Writer>Dan Smyers</tuca_Writer>
+			<tuca_Writer>Jake Goss</tuca_Writer>
+			<tuca_Writer>Les Priest</tuca_Writer>
+			<tuca_Artist role="Main" refBandID="B04">LANY</tuca_Artist>
+			<tuca_Studio>RCA Studio B</tuca_Studio>
+			<tuca_Studio>Tennessees Studios</tuca_Studio>
+			<tuca_RecordCompany>924299 Records DK</tuca_RecordCompany>
+			<tuca_ReleaseDate>2015-06-13</tuca_ReleaseDate>
+			<tuca_Description>Dream-pop trio LANY started off by making music in a Nashville bedroom, and the group's debut EP, i loved you., contains the type of moving intimacy that has attracted the attention of pop, R&amp;B and electronica fans over the past few months. LANY's first official project comes out on Tuesday (June 9), but listen to the lush, luxuriant i loved you. early on Billboard.com. The group uploaded their first few tuca_Songs on Soundcloud and started attracting label attention; in the spring, the masterful synth-pop ballad "Someone Else" expanded the group's profile ahead of their debut EP release.</tuca_Description>
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:19:44">
+				<tuca_Size format="WAV">200.15 MB</tuca_Size>
+				<tuca_Song track="1/5">
+					<tuca_SongTitle>4EVER!</tuca_SongTitle>
+					<tuca_Duration>00:03:25</tuca_Duration>
+					<tuca_SongSize>34.48 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/5">
+					<tuca_SongTitle>youarefire</tuca_SongTitle>
+					<tuca_Duration>00:03:35</tuca_Duration>
+					<tuca_SongSize>36.16 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="3/5">
+					<tuca_SongTitle>Someone Else</tuca_SongTitle>
+					<tuca_Duration>00:03:53</tuca_Duration>
+					<tuca_SongSize>39.19 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="4/5">
+					<tuca_SongTitle>I Don't Care</tuca_SongTitle>
+					<tuca_Duration>00:03:43</tuca_Duration>
+					<tuca_SongSize>37.50 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="5/5">
+					<tuca_SongTitle>Bad, Bad, Bad(Matt DiMona Remix)</tuca_SongTitle>
+					<tuca_Duration>00:05:08</tuca_Duration>
+					<tuca_SongSize>51.80 MiB</tuca_SongSize>
+				</tuca_Song>				
+			</tuca_Songs>
+			<tuca_Price>1299</tuca_Price>
+		</tuca_Album>	
+		
+		<tuca_Album language="English" albumID="AWA11" available="false">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img11" />
+			<tuca_Title>Lemon Tree (The Remixes)</tuca_Title>
+			<tuca_Genre>Pop</tuca_Genre>
+			<tuca_Genre>R&amp;B</tuca_Genre>
+			<tuca_Band origin="DE" bandID="B03">
+				<tuca_Member>Peter Freudenthaler</tuca_Member>
+				<tuca_Member>Volker Hinkel</tuca_Member>
+				<tuca_Member>Dirk Blümlein</tuca_Member>
+				<tuca_Member>Gabriel Holz</tuca_Member>
+				<tuca_Member>Thorsten Kiefer</tuca_Member>
+				<tuca_Member>Jan Hees</tuca_Member>
+			</tuca_Band>
+			<tuca_Producer>Alle Farben</tuca_Producer>
+			<tuca_Producer>FRDY</tuca_Producer>
+			<tuca_Producer>Cymo</tuca_Producer>
+			<tuca_Producer>Late Nine</tuca_Producer>
+			<tuca_Writer>Peter Freudenthaler</tuca_Writer>
+			<tuca_Writer>Volker Hinkel</tuca_Writer>
+			<tuca_Writer>Yasmeen Al-Mazeedi</tuca_Writer>
+			<tuca_Writer>Ted Case</tuca_Writer>
+			<tuca_Writer>Linden Jay Berelowitz</tuca_Writer>
+			<tuca_Artist role="Main" refBandID="B02">Fools Garden</tuca_Artist>
+			<tuca_Artist role="With">Alle Farben</tuca_Artist>
+			<tuca_Artist role="With">FRDY</tuca_Artist>
+			<tuca_Artist role="With">Cymo</tuca_Artist>
+			<tuca_Artist role="With">Late Nine</tuca_Artist>
+			<tuca_Studio>Universal Studios</tuca_Studio>
+			<tuca_RecordCompany>RCA/Famouz Records</tuca_RecordCompany>
+			<tuca_ReleaseDate>2021-03-05</tuca_ReleaseDate>
+			<tuca_Description>"Lemon Tree" is a fols tuca_Song by German tuca_Band Fool's Garden from the Album Dish of the Day, which was released as a single in 1995 and became a major international hit in 1996. The single reached number 26 on the UK Singles Chart and remained at number one for four weeks in Germany. It also reached number one in Austria, Iceland, Ireland, Norway and Sweden. Peter Freudenthaler said that he wrote ths tuca_Song on a Sunday afternoon when he was waiting for his girlfriend.</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:09:50">
+				<tuca_Size format="Mp3">22.50 MB</tuca_Size>
+				<tuca_Song track="1/3">
+					<tuca_SongTitle>Lemon Tree - Alle Farben &amp; FRDY VIP Mix</tuca_SongTitle>
+					<tuca_Duration>00:03:06</tuca_Duration>
+					<tuca_SongSize>7.09 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/3">
+					<tuca_SongTitle>Lemon Tree - Cymo Remix</tuca_SongTitle>
+					<tuca_Duration>00:03:45</tuca_Duration>
+					<tuca_SongSize>8.58 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/3">
+					<tuca_SongTitle>Lemon Tree - Late Nine Remix</tuca_SongTitle>
+					<tuca_Duration>00:03:45</tuca_Duration>
+					<tuca_SongSize>8.58 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>699</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="English" albumID="AWA14" available="true">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img14" />
+			<tuca_Title>Santa Claus Is Coming To Town</tuca_Title>
+			<tuca_Genre>Jazz</tuca_Genre>
+			<tuca_Genre>Soul</tuca_Genre>
+			<tuca_Producer>Nick Patrick</tuca_Producer>
+			<tuca_Composer>Haven Gillespie</tuca_Composer>
+			<tuca_Writer>Haven Gillespie</tuca_Writer>
+			<tuca_Writer>J. Fred Coots</tuca_Writer>
+			<tuca_Writer>Jonny Buckland</tuca_Writer>
+			<tuca_Writer>Will Champion</tuca_Writer>
+			<tuca_Artist role="Main">Frank Sinatra</tuca_Artist>
+			<tuca_Artist role="With">Seal</tuca_Artist>
+			<tuca_Studio>Muscle Shoals Sound Studio</tuca_Studio>
+			<tuca_RecordCompany>Frank Sinatra Enterprises LLC</tuca_RecordCompany>
+			<tuca_ReleaseDate>1945-12-05</tuca_ReleaseDate>
+			<tuca_Description>On October 24, 1934, banjoist Harry Reser and his band recorded the first documented recorded version of the Song. In November 1934, it was performed on Eddie Cantor's radio broadcast. Within 24 hours, orders for 500,000 copies of sheet music and more than 30,000 records had been placed for this edition. In 1934, George Hall and His Orchestra's version for Bluebird Records (vocals by Sonny Schuyler) was a big hit, reaching the top of the charts. Bing Crosby and The Andrews Sisters, Mariah Carey, Neil Diamond, Bruce Springsteen, Frank Sinatra, Bill Evans, Chris Isaak, The Temptations, and Michael Jackson have all recorded the song.</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:02:17">
+				<tuca_Size format="Mp3">5.90 MB</tuca_Size>
+				<tuca_Song track="1/1">
+					<tuca_SongTitle>Santa Claus Is Coming To Town</tuca_SongTitle>
+					<tuca_Duration>00:02:17</tuca_Duration>
+					<tuca_SongSize>5.22 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>499</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="English" albumID="AWA10" available="true">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img10" />
+			<tuca_Title>RED.</tuca_Title>
+			<tuca_Genre>Pop</tuca_Genre>
+			<tuca_Genre>Electronic</tuca_Genre>
+			<tuca_Producer>Taylor Fugit</tuca_Producer>
+			<tuca_Producer>Yasmeen Al-Mazeedi</tuca_Producer>
+			<tuca_Producer>Linden Jay Berelowitz</tuca_Producer>
+			<tuca_Composer>YAS</tuca_Composer>
+			<tuca_Writer>Nicole Cohen</tuca_Writer>
+			<tuca_Writer>Taylor Fugit</tuca_Writer>
+			<tuca_Writer>Yasmeen Al-Mazeedi</tuca_Writer>
+			<tuca_Writer>Ted Case</tuca_Writer>
+			<tuca_Writer>Linden Jay Berelowitz</tuca_Writer>
+			<tuca_Artist role="Main">YAS</tuca_Artist>
+			<tuca_Studio>Sun Studios</tuca_Studio>
+			<tuca_RecordCompany>4XLA</tuca_RecordCompany>
+			<tuca_ReleaseDate>2021-02-18</tuca_ReleaseDate>
+			<tuca_Description>YAS is a classically trained violinist-vocalist, songwriter, tuca_Composer and tuca_Producer. Picking up the violin at age 6, she has toured the world performing classical repertoire with symphony orchestras since 16. Last year, she debuted her own ethereal pop-electronic sound with hints of contemporary R&amp;B. Her tuca_Songs have garnered millions of plays. She also hates writing bios in the third person.</tuca_Description>
+			<tuca_AudioQuality bitrate="1411.2 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:06:51">
+				<tuca_Size format="FLAC">70.24 MB</tuca_Size>
+				<tuca_Song track="1/2">
+					<tuca_SongTitle>TUCKITIN</tuca_SongTitle>
+					<tuca_Duration>00:03:06</tuca_Duration>
+					<tuca_SongSize>31.29 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/2">
+					<tuca_SongTitle>LIAR LIAR</tuca_SongTitle>
+					<tuca_Duration>00:03:45</tuca_Duration>
+					<tuca_SongSize>37.85 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>499</tuca_Price>
+		</tuca_Album>
+
+		<tuca_Album language="English" albumID="AWA12" available="true">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img12" />
+			<tuca_Title>The Godfather</tuca_Title>
+			<tuca_Genre>Hip-Hop</tuca_Genre>
+			<tuca_Genre>Rap</tuca_Genre>
+			<tuca_Producer>Aaron Fuchs</tuca_Producer>
+			<tuca_Writer>Gabriel Jackson</tuca_Writer>
+			<tuca_Artist role="Main">Spoonie Gee</tuca_Artist>
+			<tuca_Studio>Power Play Studios</tuca_Studio>
+			<tuca_RecordCompany>Tuff City Records</tuca_RecordCompany>
+			<tuca_ReleaseDate>1987-03-12</tuca_ReleaseDate>
+			<tuca_Description>Peter Brown walked into Robinson's record store and said that he wanted to make a rap record, which led to his first song. Spoonie's name was proposed, and he recorded "Spoonin' Rap" for Brown's Sound of New York, USA imprint, which included a lyric with jailhouse imagery that would later become popular in gangsta rap, as well as echo added to his vocals. "The original gangsta rapper," according to Spoonie Gee.</tuca_Description>
+			<tuca_AudioQuality bitrate="512 kbps">
+				<tuca_SampleRate>16 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:14:45">
+				<tuca_Size format="WAV">54.02 MB</tuca_Size>
+				<tuca_Song track="1/3">
+					<tuca_SongTitle>The Godfather</tuca_SongTitle>
+					<tuca_Duration>00:05:12</tuca_Duration>
+					<tuca_SongSize>19.04 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/3">
+					<tuca_SongTitle>The Godfather - Instrumental</tuca_SongTitle>
+					<tuca_Duration>00:05:24</tuca_Duration>
+					<tuca_SongSize>19.77 MiB</tuca_SongSize>
+				</tuca_Song>
+				<tuca_Song track="2/3">
+					<tuca_SongTitle>The Godfather - Dub Mix</tuca_SongTitle>
+					<tuca_Duration>00:04:09</tuca_Duration>
+					<tuca_SongSize>15.19 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>699</tuca_Price>
+		</tuca_Album>
+		
+		<tuca_Album language="Spanish" albumID="AWA13" available="false">
+			<tuca_AlbumType>Single</tuca_AlbumType>
+			<tuca_Cover source="img13" />
+			<tuca_Title>Viva La Vida</tuca_Title>
+			<tuca_Genre>Indie</tuca_Genre>
+			<tuca_Genre>Pop</tuca_Genre>
+			<tuca_Producer>Sam Klempner</tuca_Producer>
+			<tuca_Producer>Shalom Margaret</tuca_Producer>
+			<tuca_Writer>Chris Martin</tuca_Writer>
+			<tuca_Writer>Guy Berryman</tuca_Writer>
+			<tuca_Writer>Jonny Buckland</tuca_Writer>
+			<tuca_Writer>Will Champion</tuca_Writer>
+			<tuca_Artist role="Main">Shalom Margaret</tuca_Artist>
+			<tuca_Studio>Associated Independent Recording Studios</tuca_Studio>
+			<tuca_RecordCompany>AMLOR Music Ltd.</tuca_RecordCompany>
+			<tuca_ReleaseDate>2020-11-25</tuca_ReleaseDate>
+			<tuca_Description>The song's Spanish title, "Viva la Vida," is inspired by a painting by Frida Kahlo, a 20th-century Mexican artist. In Spanish, viva means "to praise someone or something," so "Long Live Life" is a good approximation, and the painting captures the artistic absurdity of praising life while physically suffering. "She went through a lot of pain, of course, and then she began a huge painting in her house that said 'Viva la Vida,' I really loved the boldness of it," lead singer Chris Martin said when asked about the album's title, referring to Frida Kahlo's courage in overcoming polio, a broken spine, and a decade of constant pain.</tuca_Description>
+			<tuca_AudioQuality bitrate="320 kbps">
+				<tuca_SampleRate>44.1 Khz</tuca_SampleRate>
+				<tuca_BitDepth>16 bit</tuca_BitDepth>
+				<tuca_Channel>Stereo</tuca_Channel>	
+			</tuca_AudioQuality>
+			<tuca_Songs duration="00:02:56">
+				<tuca_Size format="Mp3">7:01 MB</tuca_Size>
+				<tuca_Song track="1/1">
+					<tuca_SongTitle>Viva La Vida</tuca_SongTitle>
+					<tuca_Duration>00:02:56</tuca_Duration>
+					<tuca_SongSize>6.71 MiB</tuca_SongSize>
+				</tuca_Song>
+			</tuca_Songs>
+			<tuca_Price>799</tuca_Price>
+		</tuca_Album>
+		
+	</tuca_AudioInventory>
+	<!-- It represents the information about the copyright of the Store's intelluctual property -->
+	<!-- the &#169; is an entity reference, referencing the © copyright symbol -->
+	<tuca_Copyright>&#169; 2021 TuneCasket Pvt. Ltd.  All Rights Reserved</tuca_Copyright>
+</tuca_Root>

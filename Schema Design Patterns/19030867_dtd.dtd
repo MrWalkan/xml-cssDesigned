@@ -1,0 +1,29 @@
+<!ELEMENT NEGO_Citizens (NEGO_Citizen+)>
+    <!ELEMENT NEGO_Citizen (NEGO_Photo,NEGO_Name,NEGO_DOB,NEGO_Address+,NEGO_Email?,NEGO_ContactNumber*,NEGO_Disability*,NEGO_Relationship,NEGO_CitizenshipNo?,NEGO_Education,NEGO_Occupation+)>
+    <!ATTLIST NEGO_Citizen personID ID #REQUIRED sex (Male|Female|Other) #REQUIRED isMarried (true|false) "false">
+    <!ELEMENT NEGO_Photo (#PCDATA)>
+    <!ELEMENT NEGO_Name (NEGO_FirstName,NEGO_MiddleName?,NEGO_LastName)>
+        <!ELEMENT NEGO_FirstName (#PCDATA)>
+        <!ELEMENT NEGO_MiddleName (#PCDATA)>
+        <!ELEMENT NEGO_LastName (#PCDATA)>
+    <!ELEMENT NEGO_DOB (#PCDATA)>
+    <!ELEMENT NEGO_Address (NEGO_Municipality,NEGO_District,NEGO_WardNo)>
+        <!ELEMENT NEGO_Municipality (#PCDATA)>
+        <!ATTLIST NEGO_Municipality division CDATA #REQUIRED>
+        <!ELEMENT NEGO_District (#PCDATA)>
+        <!ELEMENT NEGO_WardNo (#PCDATA)>
+    <!ATTLIST NEGO_Address addressType (Permanent|Present) #REQUIRED>
+    <!ELEMENT NEGO_Email (#PCDATA)>
+    <!ELEMENT NEGO_ContactNumber (#PCDATA)>
+    <!ATTLIST NEGO_ContactNumber numberType (Home|Mobile|Work|Other) #REQUIRED>
+    <!ELEMENT NEGO_Disability (#PCDATA)>
+    <!ELEMENT NEGO_Relationship (NEGO_Individual+)>
+        <!ELEMENT NEGO_Individual (#PCDATA)>
+        <!ATTLIST NEGO_Individual individualID IDREF #REQUIRED>
+    <!ELEMENT NEGO_CitizenshipNo (#PCDATA)>
+    <!ATTLIST NEGO_CitizenshipNo issuedDate CDATA #REQUIRED>
+    <!ELEMENT NEGO_Education (NEGO_EDUInstitute+)>
+        <!ELEMENT NEGO_EDUInstitute (#PCDATA)>
+        <!ATTLIST NEGO_EDUInstitute since CDATA #REQUIRED acquired CDATA #REQUIRED>
+    <!ELEMENT NEGO_Occupation (#PCDATA)>
+    <!ATTLIST NEGO_Occupation label (Current|Former) "Current">

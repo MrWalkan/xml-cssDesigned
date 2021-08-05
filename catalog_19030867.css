@@ -1,0 +1,345 @@
+/* Bishal Gc 2021-05-01*/
+
+/* Root Element */
+tuca_Root
+    {
+        /* setting the background color of the Overall XML Document */
+        background-color: #f3f4ed;
+        /* setting-up multiple fonts, so any one of them sets-up, if another does not exist in system */
+        font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+/* For Store Elements */
+tuca_Store
+    {
+        font-family: sans-serif;
+        /* choosing the layout of the tuca_Store container */
+        display: block;
+        /* specifying the image to be rendered*/
+        background-image: url("images/tucaStoreCover.jpg");
+        /* setting the size of the background to cover  */
+        background-size: cover;
+        /* Specifying the height of the tuca_Store container */
+        height: 1120px;
+    }
+/* represents store logo image */
+tuca_StoreLogo
+    {
+        background-image: url("images/tucaStoreLogo.png");
+        /* the image is set to not repeat */
+        background-repeat: no-repeat;
+        /* Setting the position of the logo by pixel precision */
+        background-position: 30px 400px;
+        /* sets the position of the image respectively */
+        position: absolute;
+        /* specifying the height & width of the tuca_StoreLogo container not the image*/
+        height: 100%;
+        width: 100%;
+        /* specifying the width of the logo image, height becomes auto  */
+        background-size: 200px;
+    }
+
+tuca_Owner, tuca_Address, tuca_WebsiteAddress, tuca_ContactDetails, tuca_ContactDetails
+    {
+        position: relative;
+        display: inline-block;
+        top: 725px;
+        left: 30px;
+        /* specifying the margin from right of the screen */
+        margin-right: 5px;
+        /* specifying the padding around the container by bothe width & height */
+        padding: 10px 20px;
+        /* making the corners of the rectangular container rounded. */
+        border-radius: 30px;
+        /* Creating transition effect for 0.5 second */
+        transition: 0.5s;
+    }
+
+tuca_Owner, tuca_Address, tuca_WebsiteAddress
+    {
+        background-color: lavender;
+    }
+
+tuca_StoreName
+    {
+        position: absolute;
+        color: rgb(49, 49, 49);
+        top: 560px;
+        left: 30px;
+        font-size: 150px;
+        font-weight: 600;
+        transition: 1s;
+    }
+
+/* Adding hover effect which is defined inside the below selector*/
+tuca_StoreName:hover
+    {
+        transition: 1s;
+        /* specifying the container movement to up or positive y-axis by 3 pixels */
+        transform: translateY(-3px);
+        /* Creating shadow of the text inside tuca_Storename Element */
+        text-shadow: 0px 10px orange;
+    }
+
+tuca_ContactDetails
+    {
+        background-color: rgb(247, 209, 209);
+    }
+
+tuca_Owner:hover, tuca_Address:hover, tuca_WebsiteAddress:hover, tuca_ContactDetails:hover
+    {
+        transition: 0.5s;
+        /* the content in the containe will be inverted */
+        filter: invert(100%);
+    }
+
+tuca_StoreDescription
+    {
+        display: block;
+        padding: 30px;
+        /* Specifying the text alignment */
+        text-align: justify;
+        position: relative;
+        top: 740px;
+        margin: 20px;
+        /* specifying the font size */
+        font-size: 17px;
+        /* specifying the spacing between the each letters */
+        letter-spacing: 1px;
+        color: rgb(39, 39, 39);
+    }
+
+/* For AudioInventory Elements */
+
+tuca_AudioInventory
+    {
+        /* Creating Flexbox */
+        display: flex;
+        /* items will be placed by row in the flexbox */
+        flex-direction: row;
+        /* items will be flowed to multiple lines maintaining width */
+        flex-wrap: wrap;
+        background-color:rgb(255, 248, 220);
+    }
+
+tuca_Album
+    {
+        width: 44.5%;
+        padding: 20px;
+        margin: 20px;
+        background-color: rgba(209,247,241,1);
+        border-radius: 30px;
+        transition: 0.9s;
+    }
+
+tuca_Album:hover
+    {
+        background-color: rgb(249, 213, 213);
+    }
+
+tuca_AlbumType, tuca_Title, tuca_SongTitle, tuca_Genre, tuca_Studio, tuca_RecordCompany, tuca_ReleaseDate, tuca_Description, tuca_AudioQuality, tuca_Size, tuca_Price
+    {
+        display: block;
+        padding: 10px;
+        margin: 5px;
+    }
+
+tuca_Band
+    {
+        display: block;
+    }
+
+tuca_Member, tuca_Director, tuca_Producer, tuca_Composer, tuca_Writer, tuca_Artist
+    {
+        display: inline-block;
+        border-radius: 30px;
+        padding: 7px 10px;  
+        margin: 4px 2px;
+        transition: 1s;
+    }    
+
+tuca_Title
+    {
+        font-size: 50px;
+    }
+
+tuca_Member
+    {
+        background-color: #a8ffe9;
+    }
+
+tuca_Director
+    {
+        background-color: #fca8ff;
+    }
+
+tuca_Producer 
+    {
+        background-color: #fff2a8;        
+    }
+
+tuca_Composer
+    {
+        background-color: #d2ffa8;
+    }
+
+tuca_Writer
+    {
+        background-color: #ffa8a8;
+    }
+
+tuca_Artist
+    {
+        background-color: #a8b8ff;
+    }
+
+tuca_Description
+    {
+        text-align: justify;
+        font-size: 17px;
+    }
+
+tuca_Songs
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+tuca_Member:hover, tuca_Song:hover, tuca_Director:hover, tuca_Producer:hover, tuca_Composer:hover, tuca_Writer:hover, tuca_Artist:hover
+    {
+        transition: 0.5s;
+        background-color:rgb(255, 248, 220);
+    }
+
+tuca_Song
+    {
+        /* all the contents inside the tuca_Song container will be aligned center  */
+        justify-content: center;
+        text-align: center;
+        width: 28.2%;
+        padding: 5px 5px 20px 5px;
+        border-radius: 30px;
+        margin: 10px;
+        background-color: #ffb7b7;
+        transition: 1s;
+    }
+
+tuca_SongTitle
+    {
+        font-size: 22px;
+    }
+
+tuca_Size
+    {
+        flex: 0 0 100%;
+    }
+
+tuca_Duration
+    {
+        padding: 5px;
+        border-radius: 30px;
+        margin: 5px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+tuca_Price
+    {
+        font-size: 25px;
+    }
+
+tuca_Cover
+    {
+        display: block;
+        background-size: contain;
+        background-repeat: no-repeat;        
+        height: 350px;
+        width: 350px;
+        border-radius: 30px;
+        transition: 1.5s;
+    }
+/* specifying an Element by its unique attribute ID to place different images */
+tuca_Cover[source="img1"]
+    {        
+        background-image: url(images/sketchesOfDajeeling.jpg);
+    }
+tuca_Cover[source="img2"]
+    {        
+        background-image: url(images/word.jpg);
+    }
+tuca_Cover[source="img3"]
+    {
+        background-image: url(images/agora.jpg);
+    }
+tuca_Cover[source="img4"]
+    {
+        background-image: url(images/dobleVida.jpg);
+    }
+tuca_Cover[source="img5"]
+    {
+        background-image: url(images/billieHoliday.jpg);
+    }
+tuca_Cover[source="img6"]
+    {
+        background-image: url(images/justice.jpg);
+    }
+tuca_Cover[source="img7"]
+    {
+        background-image: url(images/everMore.jpg);
+    }
+tuca_Cover[source="img8"]
+    {
+        background-image: url(images/loveSongsForRobots.jpg);
+    }
+tuca_Cover[source="img9"]
+    {
+        background-image: url(images/theBlueRoom.jpg);
+    }
+tuca_Cover[source="img10"]
+    {
+        background-image: url(images/red.jpg);
+    }
+tuca_Cover[source="img11"]
+    {
+        background-image: url(images/lemonTree.jpg);
+    }
+tuca_Cover[source="img12"]
+    {
+        background-image: url(images/theGodfather.jpg);
+    }
+tuca_Cover[source="img13"]
+    {
+        background-image: url(images/vivaLaVida.png);
+    }
+tuca_Cover[source="img14"]
+    {
+        background-image: url(images/santaClaus.jpg);
+    }
+tuca_Cover[source="img15"]
+    {
+        background-image: url(images/iLovedYou.jpg);
+    }
+
+tuca_Cover:hover
+    {
+        transition: 1.2s;
+        background-size: cover;
+        width: 675px;
+        height: 675px;
+    }
+
+tuca_Cover:active
+    {
+        /* The tuca_Cover container will be rotated by 180 degree */
+        transform: rotate(180deg);
+    }
+
+tuca_Copyright
+    {
+        display: block;
+        padding: 5px;
+        color:rgb(255, 127, 80);
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }

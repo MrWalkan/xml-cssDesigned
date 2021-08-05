@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML Schema Following Flat Catalog Design -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Complex Elements -->
+    <xs:element name="NEGO_Citizens">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_Citizen" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Citizen">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_Photo"/>
+                <xs:element ref="NEGO_Name"/>
+                <xs:element ref="NEGO_DOB"/>
+                <xs:element ref="NEGO_Address" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="NEGO_Email" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="NEGO_ContactNumber" minOccurs="0" maxOccurs="5"/>
+                <xs:element ref="NEGO_Disability" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="NEGO_Relationship"/>
+                <xs:element ref="NEGO_CitizenshipNo" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="NEGO_Education"/>
+                <xs:element ref="NEGO_Occupation" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="personID" use="required"/>
+            <xs:attribute ref="sex" use="required"/>
+            <xs:attribute ref="isMarried" default="false"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Name">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_FirstName"/>
+                <xs:element ref="NEGO_MiddleName" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="NEGO_LastName"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Address">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_Municipality"/>
+                <xs:element ref="NEGO_District"/>
+                <xs:element ref="NEGO_WardNo"/>
+            </xs:sequence>
+            <xs:attribute ref="addressType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Municipality">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="division"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_ContactNumber">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="attNumber">
+                    <xs:attribute ref="numberType"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Relationship">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_Individual" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Individual">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="individualID"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_CitizenshipNo">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="eleCitizenNo">
+                    <xs:attribute ref="issuedDate"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Education">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="NEGO_EDUInstitute" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_EDUInstitute">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="since"/>
+                    <xs:attribute ref="acquired"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="NEGO_Occupation">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="label" default="Current"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Attributes -->
+    <xs:attribute name="personID" type="xs:ID"/>
+    <xs:attribute name="sex" type="attSex"/>
+    <xs:attribute name="isMarried" type="xs:boolean"/>
+    <xs:attribute name="addressType" type="attAddress"/>
+    <xs:attribute name="division" type="xs:string"/>
+    <xs:attribute name="numberType" type="attNumberType"/>
+    <xs:attribute name="individualID" type="xs:IDREF"/>
+    <xs:attribute name="issuedDate" type="xs:date"/>
+    <xs:attribute name="label" type="attLabel"/>
+    <xs:attribute name="since" type="xs:date"/>
+    <xs:attribute name="acquired" type="xs:string"/>
+
+    <!-- Simple Element -->
+    <xs:element name="NEGO_FirstName" type="xs:string"/>
+    <xs:element name="NEGO_MiddleName" type="xs:string"/>
+    <xs:element name="NEGO_LastName" type="xs:string"/>
+    <xs:element name="NEGO_Photo" type="xs:string"/>
+    <xs:element name="NEGO_DOB" type="xs:date"/>
+    <xs:element name="NEGO_District" type="xs:string"/>
+    <xs:element name="NEGO_WardNo" type="xs:byte"/>
+    <xs:element name="NEGO_Email" type="xs:string"/>
+    <xs:element name="NEGO_Disability" type="xs:string"/>
+
+    <!-- User-defined Types -->
+    <xs:simpleType name="attSex">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Male"/>
+            <xs:enumeration value="Female"/>
+            <xs:enumeration value="Other"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attAddress">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Present|Permanent"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attNumberType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Home|Mobile|Work|Other"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attNumber">
+        <xs:restriction base="xs:long">
+            <xs:totalDigits value="10"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="eleCitizenNo">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}\-\d{2}-\d{2}-\d{5}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attLabel">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="Former|Current"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

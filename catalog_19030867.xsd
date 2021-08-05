@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- XML Schema Following Flat Catalog Design -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <!-- Definition of Complex Elements -->
+    <!-- root element declaration-->
+    <xs:element name="tuca_Root">
+        <!-- complexType is used, sicne the tuca_Root has child elements -->
+        <xs:complexType>
+            <!-- sequence defines the elements must follow the order in xml instance -->
+            <xs:sequence>
+                <!-- ref shorts for reference -->
+                <xs:element ref="tuca_Store"/>
+                <xs:element ref="tuca_AudioInventory"/>
+                <xs:element ref="tuca_Copyright"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Store reference - child element of tuca_Root element -->
+    <xs:element name="tuca_Store">
+        <!-- complexType is also used if an Element has both attribute & child element -->
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_StoreLogo"/>
+                <xs:element ref="tuca_StoreName"/>
+                <xs:element ref="tuca_Owner"/>
+                <xs:element ref="tuca_Address"/>
+                <xs:element ref="tuca_WebsiteAddress"/>
+                <xs:element ref="tuca_ContactDetails"/>
+                <xs:element ref="tuca_StoreDescription"/>
+            </xs:sequence>
+            <!-- An attribut reference -->
+            <xs:attribute ref="source" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_StoreLogo reference - child element of tuca_Store element -->
+    <xs:element name="tuca_StoreLogo">
+        <!-- complexType is also used if an Element has only attribute(s) -->
+        <xs:complexType>
+            <xs:attribute ref="source" use="required"/>
+        </xs:complexType>
+    </xs:element>    
+    <!-- tuca_Owner reference - child element of tuca_Store element -->
+    <xs:element name="tuca_Owner">
+        <!-- complexType is also used if an element has both text content & attribute(s) -->
+        <xs:complexType>
+            <!-- Simple element is used if an Element includes both attribute & text content -->
+            <xs:simpleContent>
+                <!-- extension tag extends the complexType Element by adding an attribute and declaring the dataType through base attribute for that Element -->
+                <xs:extension base="xs:string">
+                    <!-- default attribute allows an attribute to exist with the given value even if it misses while defining an Element -->
+                    <xs:attribute ref="sex" default="Male"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Address reference - child element of tuca_Store element -->
+    <xs:element name="tuca_Address">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <!-- use attribute with required value specifies an element to must have the given attribute declared with suitable value while defining the Element  -->
+                    <xs:attribute ref="country" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_ContactDetails reference - child element of tuca_Store element -->
+    <xs:element name="tuca_ContactDetails">
+        <xs:complexType>
+            <xs:sequence>
+                <!-- minOcuurs and maxOccurs defines the minimux and maximum occurance of an Element, unbounded means no limit -->
+                <xs:element ref="tuca_TelephoneNumber" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Email"/>
+            </xs:sequence>            
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_AudioInventory reference - child element of tuca_Root element -->
+    <xs:element name="tuca_AudioInventory">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_Album" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Album reference - child element of tuca_AudioInventroy element -->
+    <xs:element name="tuca_Album">
+        <!-- mixed attributes defines an Element to have attribute, child-Elements and text content all at once -->
+        <xs:complexType mixed="false">
+            <xs:sequence>
+                <xs:element ref="tuca_AlbumType"/>
+                <xs:element ref="tuca_Cover"/>
+                <xs:element ref="tuca_Title"/>
+                <xs:element ref="tuca_Genre" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Band" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="tuca_Director" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Producer" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Composer" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Writer" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Artist" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_Studio" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="tuca_RecordCompany"/>
+                <xs:element ref="tuca_ReleaseDate"/>
+                <xs:element ref="tuca_Description"/>
+                <xs:element ref="tuca_AudioQuality"/>
+                <xs:element ref="tuca_Songs"/>
+                <xs:element ref="tuca_Price"/>
+            </xs:sequence>
+            <xs:attribute ref="language" use="required"/>
+            <xs:attribute ref="albumID" use="required"/>
+            <xs:attribute ref="available" default="true"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Cover reference - child element of tuca_Album element -->
+    <xs:element name="tuca_Cover">
+        <xs:complexType>
+            <xs:attribute ref="source" use="required"/>
+        </xs:complexType>
+    </xs:element>    
+    <!-- tuca_Band reference - child element of tuca_Album element -->
+    <xs:element name="tuca_Band">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_Member" minOccurs="2" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="origin" use="required"/>
+            <xs:attribute ref="bandID" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Artist reference - child element of tuca_Album element -->
+    <xs:element name="tuca_Artist">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="role"/>
+                    <xs:attribute ref="refBandID" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_AudioQuality reference - child element of tuca_Album element -->
+    <xs:element name="tuca_AudioQuality">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_SampleRate"/>
+                <xs:element ref="tuca_BitDepth"/>
+                <xs:element ref="tuca_Channel"/>
+            </xs:sequence>
+            <xs:attribute ref="bitrate" use="required"/>
+        </xs:complexType>
+    </xs:element>    
+    <!-- tuca_Songs reference - child element of tuca_Album element -->
+    <xs:element name="tuca_Songs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_Size"/>
+                <xs:element ref="tuca_Song" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="duration" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Size reference - child element of tuca_Songs element -->
+    <xs:element name="tuca_Size">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute ref="format" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- tuca_Song reference - child element of tuca_Songs element -->
+    <xs:element name="tuca_Song">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="tuca_SongTitle"/>
+                <xs:element ref="tuca_Duration"/>
+                <xs:element ref="tuca_SongSize"/>
+            </xs:sequence>
+            <xs:attribute ref="track" use="required"/>
+        </xs:complexType>
+    </xs:element>
+
+    <!-- Definition of Attributes -->
+    <xs:attribute name="country" type="attCountry"/>
+    <xs:attribute name="source" type="xs:string"/>
+    <xs:attribute name="sex" type="attSex"/>
+    <xs:attribute name="language" type="xs:string"/>
+    <!-- ID type defines an unique value given to an Element/Attribute in the instance document or XML file -->
+    <xs:attribute name="albumID" type="xs:ID"/>
+    <!-- boolean type defines an Element/Attribute value to have either true or false -->
+    <xs:attribute name="available" type="xs:boolean"/>
+    <xs:attribute name="origin" type="attCountry"/>
+    <xs:attribute name="bandID" type="xs:ID"/>
+    <xs:attribute name="role" type="attRole"/>
+    <!-- IDREF references an ID value available in the XML instance, Here the IDREF is used to reference bandID attribute value -->
+    <xs:attribute name="refBandID" type="xs:IDREF"/>
+    <xs:attribute name="bitrate" type="xs:string"/>
+    <!-- NMTOKEN specifies an Element/Attribute to have valid XML names with no spaces -->
+    <xs:attribute name="format" type="xs:NMTOKEN"/>
+    <xs:attribute name="duration" type="xs:time"/>
+    <xs:attribute name="track" type="attTrack"/>
+
+    <!-- Definition of Simple Elements -->
+    <!-- DataTypes of text content of an Element & Attribute can be User-Defined -->
+    <!-- The dataType is defined in type attribute -->
+    <!-- the string type defines an element/attribut value to have string of charaters -->
+    <xs:element name="tuca_StoreName" type="xs:string"/>
+    <xs:element name="tuca_WebsiteAddress" type="xs:string"/>
+    <xs:element name="tuca_TelephoneNumber" type="attTelephoneNumber"/>
+    <xs:element name="tuca_Email" type="xs:string"/>
+    <xs:element name="tuca_StoreDescription" type="xs:string"/>
+    <xs:element name="tuca_AlbumType" type="xs:string"/>
+    <xs:element name="tuca_Title" type="xs:string"/>
+    <xs:element name="tuca_Genre" type="xs:string"/>
+    <xs:element name="tuca_Member" type="xs:string"/>
+    <xs:element name="tuca_Director" type="xs:string"/>
+    <xs:element name="tuca_Producer" type="xs:string"/>
+    <xs:element name="tuca_Composer" type="xs:string"/>
+    <xs:element name="tuca_Writer" type="xs:string"/>    
+    <xs:element name="tuca_Studio" type="xs:string"/>
+    <xs:element name="tuca_RecordCompany" type="xs:string"/>
+    <!-- date Type defines a text content to follow YYYY/MM/DD format representing date -->
+    <xs:element name="tuca_ReleaseDate" type="xs:date"/>
+    <xs:element name="tuca_Description" type="attDescription"/>
+    <xs:element name="tuca_SampleRate" type="xs:string"/>
+    <xs:element name="tuca_BitDepth" type="xs:string"/>
+    <xs:element name="tuca_Channel" type="attChannel"/>    
+    <xs:element name="tuca_SongTitle" type="xs:string"/>
+    <!-- time Type defines a text conten to follow HH:MM:SS format representing time -->
+    <xs:element name="tuca_Duration" type="xs:time"/>
+    <xs:element name="tuca_SongSize" type="attSongSize"/>
+    <xs:element name="tuca_Price" type="attPrice"/>
+    <xs:element name="tuca_Copyright" type="xs:string"/>
+
+    <!-- User-Defined DataTypes -->
+    <xs:simpleType name="attSex">
+        <xs:restriction base="xs:string">
+            <!-- enumeration represents a list of data defined in base attribute of restriction Element, from which only one can be choosed -->
+            <xs:enumeration value="Male"/>
+            <xs:enumeration value="Female"/>
+            <xs:enumeration value="Other"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attCountry">
+        <xs:restriction base="xs:NMTOKEN">
+            <!-- The given RegExp pattern specifies to have 2 or 3 character long String of Uppercase alphabets -->
+            <xs:pattern value="[A-Z]{2,3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attTelephoneNumber">
+        <xs:restriction base="xs:string">
+            <!-- The given RegExp specifies to have a string starting with 01- and ends with 7 characters long string of Numbers  -->
+            <xs:pattern value="(01\-)[0-9]{7}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attRole">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Main"/>
+            <xs:enumeration value="Feature"/>
+            <xs:enumeration value="With"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attDescription">
+        <xs:restriction base="xs:string">
+            <!-- The minLength & maxLength specifies the minimum & maximum number of characters allowed -->
+            <xs:minLength value="200"></xs:minLength>
+            <xs:maxLength value="1000"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attChannel">
+        <xs:restriction base="xs:string">
+            <!-- The given RegExp specifies to have either of the String divided by | -->
+            <xs:pattern value="Mono|Stereo|Surround"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attTrack">
+        <xs:restriction base="xs:string">
+            <!-- The given RegExp specifies to have a String containing 1 or 2 digits followed by another 1 or 2 digits spearated by / -->
+            <xs:pattern value="[0-9]{1,2}\/[0-9]{1,2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attSongSize">
+        <xs:restriction base="xs:string">
+            <!-- The given RegExp specifies a string containing upto 3 digits long String followed by upto 2 digits long string separated by . with trailing MiB   -->
+            <xs:pattern value="[0-9]{1,3}(\.)?[0-9]{0,2}( MiB)"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="attPrice">
+        <xs:restriction base="xs:positiveInteger">
+            <!-- the toalDigits Element specifies the exact number of digits and fractionDigits specifies number of digits after decimal point -->
+            <xs:totalDigits value="4"/>
+            <xs:fractionDigits value="0"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

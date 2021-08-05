@@ -1,0 +1,95 @@
+<!-- The NOTATION Declaration corresponds to the URI referenced from the NDATA datatype argument which is further specified to what kind of data actually it is in system -->
+<!NOTATION JPGfile SYSTEM "image/jpeg">
+<!NOTATION PNGfile SYSTEM "image/png">
+
+<!-- The given ENTITY declartion defines an Entity to be parsed externally for representing a non-XML file -->
+<!-- The NDATA or Notation Data represents an Entity to be of certain data of type determined by the dataType argument which corresponds to a Notation -->
+<!ENTITY img0 SYSTEM "catalog_19030867.xml">
+<!ENTITY img01 SYSTEM "images/tucaStoreLogo.png" NDATA PNGfile>
+<!ENTITY img1 SYSTEM "images/sketchesOfDajeeling.jpg" NDATA JPGfile>
+<!ENTITY img2 SYSTEM "images/word.jpg" NDATA JPGfile>
+<!ENTITY img3 SYSTEM "images/agora.jpg" NDATA JPGfile>
+<!ENTITY img4 SYSTEM "images/dobleVida.jpg" NDATA JPGfile>
+<!ENTITY img5 SYSTEM "images/billieHoliday.jpg" NDATA JPGfile>
+<!ENTITY img6 SYSTEM "images/justice.jpg" NDATA JPGfile>
+<!ENTITY img7 SYSTEM "images/everMore.jpg" NDATA JPGfile>
+<!ENTITY img8 SYSTEM "images/loveSongsForRobots.jpg" NDATA JPGfile>
+<!ENTITY img9 SYSTEM "images/theBlueRoom.jpg" NDATA JPGfile>
+<!ENTITY img10 SYSTEM "images/red.jpg" NDATA JPGfile>
+<!ENTITY img11 SYSTEM "images/lemonTree.jpg" NDATA JPGfile>
+<!ENTITY img12 SYSTEM "images/theGodfather.jpg" NDATA JPGfile>
+<!ENTITY img13 SYSTEM "images/vivaLaVida.png" NDATA PNGfile>
+<!ENTITY img14 SYSTEM "images/santaClaus.jpg" NDATA JPGfile>
+<!ENTITY img15 SYSTEM "images/iLovedYou.jpg" NDATA JPGfile>
+
+<!-- Child Elements of An Element can be declared inside the parentheses separated by comma  -->
+<!ELEMENT tuca_Root (tuca_Store,tuca_AudioInventory,tuca_Copyright)>
+<!-- ATTLIST Declartion is used to Define the Attribute specification of an Element -->
+<!-- Below ATTLIST defines the namespace named xmlns attached to the root element tuca_Root whose value representing the quoted URI is of Character Data and is fixed -->
+<!ATTLIST tuca_Root xmlns CDATA #FIXED "http//www.w3schools.com">
+    <!ELEMENT tuca_Store (tuca_StoreLogo,tuca_StoreName,tuca_Owner,tuca_Address,tuca_WebsiteAddress,tuca_ContactDetails,tuca_StoreDescription)>
+    <!ATTLIST tuca_Store source ENTITY #REQUIRED>
+        <!-- The ELEMENT Declartion with #PCDATA inside parentheses defines any text content inside that Element is parsed by the Parser or processed by the XML Processor -->
+        <!ELEMENT tuca_StoreLogo (#PCDATA)>
+        <!ELEMENT tuca_StoreName (#PCDATA)>
+        <!ELEMENT tuca_Owner (#PCDATA)>
+        <!ELEMENT tuca_Address (#PCDATA)>
+        <!ELEMENT tuca_WebsiteAddress (#PCDATA)>
+        <!-- The + sign after the Element name represents that the Element can occur one or more times -->
+        <!ELEMENT tuca_ContactDetails (tuca_TelephoneNumber+,tuca_Email)>
+            <!ELEMENT tuca_TelephoneNumber (#PCDATA)>
+            <!ELEMENT tuca_Email (#PCDATA)>
+        <!ELEMENT tuca_StoreDescription (#PCDATA)>
+        <!-- The ENTITY Attribute type represents a non-XML file in below context which is defined by Notation -->
+        <!-- the attribute-value #REQUIRED represents that the givena attribtue must be defined during an Element definition -->
+        <!ATTLIST tuca_StoreLogo source ENTITY #REQUIRED>
+        <!-- The attribute-type Enumerated list contains data inside parentheses spearated by | from which any one of them needs to be defined in the attribute value -->
+        <!-- The attribute-value is set to "Male" as default which means, if the given attribute is not defined, the XML parser reads the attribute value as give default value  -->
+        <!ATTLIST tuca_Owner sex (Male|Female|Other) "Male">
+        <!-- The NMTOKEN represents a vaild XML name -->
+        <!ATTLIST tuca_Address country NMTOKEN #REQUIRED>
+    <!-- The * sign after an Element name represents that the Element can occur 0 or more times -->
+    <!ELEMENT tuca_AudioInventory (tuca_Album*)>
+    <!-- The ? sign represents that the Element may occur once or may not occur -->
+    <!ELEMENT tuca_Album (tuca_AlbumType,tuca_Cover,tuca_Title,tuca_Genre+,tuca_Band?,tuca_Director*,tuca_Producer+,tuca_Composer*,tuca_Writer+,tuca_Artist+,tuca_Studio+,tuca_RecordCompany,tuca_ReleaseDate,tuca_Description,tuca_AudioQuality,tuca_Songs,tuca_Price)>
+    <!ATTLIST tuca_Album language CDATA #IMPLIED albumID ID #REQUIRED available (true|false) "false">
+        <!ELEMENT tuca_AlbumType (#PCDATA)>
+        <!-- the EMPTY element-content declares an Empty element without text content -->
+        <!ELEMENT tuca_Cover EMPTY>
+        <!ELEMENT tuca_Title (#PCDATA)>
+        <!ELEMENT tuca_Genre (#PCDATA)>
+        <!ELEMENT tuca_Band (tuca_Member+)>
+            <!ELEMENT tuca_Member (#PCDATA)>
+        <!ELEMENT tuca_Director (#PCDATA)>
+        <!ELEMENT tuca_Producer (#PCDATA)>
+        <!ELEMENT tuca_Composer (#PCDATA)>        
+        <!ELEMENT tuca_Writer (#PCDATA)>
+        <!ELEMENT tuca_Artist (#PCDATA)>
+        <!ELEMENT tuca_Studio (#PCDATA)>
+        <!ELEMENT tuca_RecordCompany (#PCDATA)>
+        <!ELEMENT tuca_ReleaseDate (#PCDATA)>
+        <!ELEMENT tuca_Description (#PCDATA)>
+        <!ELEMENT tuca_AudioQuality (tuca_SampleRate,tuca_BitDepth,tuca_Channel)>
+            <!ELEMENT tuca_SampleRate (#PCDATA)>
+            <!ELEMENT tuca_BitDepth (#PCDATA)>
+            <!ELEMENT tuca_Channel (#PCDATA)>
+        <!ELEMENT tuca_Songs (tuca_Size,tuca_Song+)>
+            <!ELEMENT tuca_Size (#PCDATA)>
+            <!ELEMENT tuca_Song (tuca_SongTitle,tuca_Duration,tuca_SongSize)>
+                <!ELEMENT tuca_SongTitle (#PCDATA)>
+                <!ELEMENT tuca_Duration (#PCDATA)>
+                <!ELEMENT tuca_SongSize (#PCDATA)>
+        <!ELEMENT tuca_Price (#PCDATA)>
+        <!ATTLIST tuca_Cover source ENTITY #REQUIRED>
+        <!-- Any number of Attributes can be defined inside the ATTLIST declaration -->
+        <!-- the attribute-type ID represents a unique value in the XML instance -->
+        <!ATTLIST tuca_Band origin NMTOKEN #REQUIRED bandID ID #REQUIRED>
+        <!-- The attribute-value IDREF represents a value referenced from available ID in XML instance -->
+        <!-- the attribute-value #IMPLIED defines that the Attribute may or May not be defined while Element Declartion in XML document/instance/file -->
+        <!ATTLIST tuca_Artist role (Main|Feature|With) "Main" refBandID IDREF #IMPLIED>
+        <!ATTLIST tuca_AudioQuality bitrate CDATA #REQUIRED>
+        <!ATTLIST tuca_Songs duration CDATA #REQUIRED>
+        <!ATTLIST tuca_Size format NMTOKEN #REQUIRED>
+        <!ATTLIST tuca_Song track CDATA #REQUIRED>
+        
+    <!ELEMENT tuca_Copyright (#PCDATA)>

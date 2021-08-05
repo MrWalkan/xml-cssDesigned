@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- For validating against DTD  -->
+<!-- <!DOCTYPE NEGO_Citizens SYSTEM "19030867_dtd.dtd">
+<NEGO_Citizens> -->
+
+<!-- For validating against Schema -->
+<NEGO_Citizens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="19030867_venetianblind.xsd"
+>
+    <NEGO_Citizen personID="NC5674" sex="Male" isMarried="true">
+        <NEGO_Photo>img/NC5674.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Hari</NEGO_FirstName>
+            <NEGO_MiddleName>Singh</NEGO_MiddleName>
+            <NEGO_LastName>Shah</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2035-08-11</NEGO_DOB>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Village">Dhangadhi</NEGO_Municipality>
+            <NEGO_District>Kailali</NEGO_District>
+            <NEGO_WardNo>5</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_ContactNumber numberType="Home">071847543</NEGO_ContactNumber>
+        <NEGO_ContactNumber numberType="Mobile">9888374958</NEGO_ContactNumber>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC4332">Spouse</NEGO_Individual>
+            <NEGO_Individual individualID="NC8324">Daughter</NEGO_Individual>
+            <NEGO_Individual individualID="NC8424">Son</NEGO_Individual> 
+        </NEGO_Relationship>
+        <NEGO_CitizenshipNo issuedDate="2039-08-12">09-85-89-45876</NEGO_CitizenshipNo>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2038-01-26" acquired="Secondary Education">Gyan-Joti Secondary School</NEGO_EDUInstitute>
+        </NEGO_Education>
+        <NEGO_Occupation label="Current">Farmer</NEGO_Occupation>
+    </NEGO_Citizen>
+
+    <NEGO_Citizen personID="NC4332" sex="Female" isMarried="true">
+        <NEGO_Photo>img/NC4332.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Basita</NEGO_FirstName>
+            <NEGO_LastName>Rana</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2039-02-05</NEGO_DOB>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Village">Dhangadhi</NEGO_Municipality>
+            <NEGO_District>Kailali</NEGO_District>
+            <NEGO_WardNo>5</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Email>basitarara@gmail.com</NEGO_Email>
+        <NEGO_ContactNumber numberType="Mobile">9866748570</NEGO_ContactNumber>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC5674">Spouse</NEGO_Individual>
+            <NEGO_Individual individualID="NC8324">Daughter</NEGO_Individual>
+            <NEGO_Individual individualID="NC8424">Son</NEGO_Individual>            
+        </NEGO_Relationship>
+        <NEGO_CitizenshipNo issuedDate="2050-09-21">45-67-98-12590</NEGO_CitizenshipNo>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2044-09-12" acquired="Primary Education">Ramandan Secondary School</NEGO_EDUInstitute>
+        </NEGO_Education>
+        <NEGO_Occupation label="Current">Teacher</NEGO_Occupation>
+    </NEGO_Citizen>
+
+    <NEGO_Citizen personID="NC8324" sex="Female" isMarried="true">
+        <NEGO_Photo>src/NC8324.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Saraswati</NEGO_FirstName>
+            <NEGO_LastName>Thapa</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2051-01-09</NEGO_DOB>
+        <NEGO_Address addressType="Present">
+            <NEGO_Municipality division="Metropolitan City">Kathmandu</NEGO_Municipality>
+            <NEGO_District>Kathmandu</NEGO_District>
+            <NEGO_WardNo>11</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Sub-Meteropolitan City">Butwal</NEGO_Municipality>
+            <NEGO_District>Rupandehi</NEGO_District>
+            <NEGO_WardNo>08</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Email>singSaraswati@gmail.com</NEGO_Email>
+        <NEGO_ContactNumber numberType="Mobile">9887564293</NEGO_ContactNumber>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC5674">Father</NEGO_Individual>
+            <NEGO_Individual individualID="NC4332">Mother</NEGO_Individual>
+            <NEGO_Individual individualID="NC7532">Spouse</NEGO_Individual>
+            <NEGO_Individual individualID="NC9032">Son</NEGO_Individual>
+            <NEGO_Individual individualID="NC8424">Brother</NEGO_Individual> 
+        </NEGO_Relationship>
+        <NEGO_CitizenshipNo issuedDate="2075-09-26">56-11-23-89547</NEGO_CitizenshipNo>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2054-01-25" acquired="Secondary Education">Lalita High School</NEGO_EDUInstitute>
+            <NEGO_EDUInstitute since="2054-01-25" acquired="Diploma">NIK Nursing Institute</NEGO_EDUInstitute>
+        </NEGO_Education>
+        <NEGO_Occupation label="Current">Nurse</NEGO_Occupation>
+        <NEGO_Occupation label="Former">Lab Technician</NEGO_Occupation>
+    </NEGO_Citizen>
+
+    <NEGO_Citizen personID="NC8424" sex="Male">
+        <NEGO_Photo>img/NC8424.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Puranjan</NEGO_FirstName>
+            <NEGO_MiddleName>Singh</NEGO_MiddleName>
+            <NEGO_LastName>Rana</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2053-10-16</NEGO_DOB>
+        <NEGO_Address addressType="Present">
+            <NEGO_Municipality division="Sub-Metropolitan City">Hetauda</NEGO_Municipality>
+            <NEGO_District>Makwanpur</NEGO_District>
+            <NEGO_WardNo>9</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Village">Dhangadhi</NEGO_Municipality>
+            <NEGO_District>Kailali</NEGO_District>
+            <NEGO_WardNo>5</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Email>purrana@gmail.com</NEGO_Email>
+        <NEGO_ContactNumber numberType="Mobile">9856338495</NEGO_ContactNumber>
+        <NEGO_Disability>Hearing Impairment</NEGO_Disability>
+        <NEGO_Disability>Hearing Impairment</NEGO_Disability>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC5674">Father</NEGO_Individual>
+            <NEGO_Individual individualID="NC4332">Mother</NEGO_Individual>
+            <NEGO_Individual individualID="NC8324">Sister</NEGO_Individual>
+        </NEGO_Relationship>
+        <NEGO_CitizenshipNo issuedDate="2067-11-29">68-34-21-09438</NEGO_CitizenshipNo>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2056-01-17" acquired="Primary Education">Lalita High School</NEGO_EDUInstitute>
+            <NEGO_EDUInstitute since="2064-01-04" acquired="Secondary Education">Kantipur High School</NEGO_EDUInstitute>
+            <NEGO_EDUInstitute since="2070-03-13" acquired="Bachelor Degree">Tribhuvan College of IT and Management</NEGO_EDUInstitute>
+        </NEGO_Education>
+        <NEGO_Occupation label="Current">Software Engineer</NEGO_Occupation>
+        <NEGO_Occupation label="Former">System Administrator</NEGO_Occupation>
+        <NEGO_Occupation label="Former">Front-end Developer</NEGO_Occupation>
+    </NEGO_Citizen>
+
+    <NEGO_Citizen personID="NC7532" sex="Male" isMarried="true">
+        <NEGO_Photo>img/NC7532.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Ram</NEGO_FirstName>
+            <NEGO_MiddleName>Chandra</NEGO_MiddleName>
+            <NEGO_LastName>Thapa</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2048-09-26</NEGO_DOB>
+        <NEGO_Address addressType="Present">
+            <NEGO_Municipality division="Metropolitan City">Kathmandu</NEGO_Municipality>
+            <NEGO_District>Kathmandu</NEGO_District>
+            <NEGO_WardNo>11</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Sub-Meteropolitan City">Butwal</NEGO_Municipality>
+            <NEGO_District>Rupandehi</NEGO_District>
+            <NEGO_WardNo>08</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Email>ramc@gmail.com</NEGO_Email>
+        <NEGO_ContactNumber numberType="Mobile">9857358329</NEGO_ContactNumber>
+        <NEGO_ContactNumber numberType="Work">9894883745</NEGO_ContactNumber>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC8324">Spouse</NEGO_Individual>
+            <NEGO_Individual individualID="NC9032">Son</NEGO_Individual>
+        </NEGO_Relationship>
+        <NEGO_CitizenshipNo issuedDate="2067-04-21">59-23-45-09483</NEGO_CitizenshipNo>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2051-09-16" acquired="Secondary Education">Bisnupita Secondary Schools</NEGO_EDUInstitute>
+            <NEGO_EDUInstitute since="2051-09-16" acquired="Bachelor Degree">Lumbini Engineering College</NEGO_EDUInstitute>           
+        </NEGO_Education>
+        <NEGO_Occupation label="Current">Civil Engineer</NEGO_Occupation>
+    </NEGO_Citizen>
+
+    <NEGO_Citizen personID="NC9032" sex="Male">
+        <NEGO_Photo>img/NC9032.jpg</NEGO_Photo>
+        <NEGO_Name>
+            <NEGO_FirstName>Chandra</NEGO_FirstName>
+            <NEGO_LastName>Thapa</NEGO_LastName>            
+        </NEGO_Name>
+        <NEGO_DOB>2067-05-24</NEGO_DOB>
+        <NEGO_Address addressType="Permanent">
+            <NEGO_Municipality division="Metropolitan City">Kathmandu</NEGO_Municipality>
+            <NEGO_District>Kathmandu</NEGO_District>
+            <NEGO_WardNo>11</NEGO_WardNo>
+        </NEGO_Address>
+        <NEGO_Relationship>
+            <NEGO_Individual individualID="NC7532">Father</NEGO_Individual>
+            <NEGO_Individual individualID="NC8324">Mother</NEGO_Individual>
+        </NEGO_Relationship>
+        <NEGO_Education>
+            <NEGO_EDUInstitute since="2069-02-24" acquired="Primary Education">New Xavier Secondary School</NEGO_EDUInstitute>
+        </NEGO_Education>
+        <NEGO_Occupation>Student</NEGO_Occupation>
+    </NEGO_Citizen>
+
+</NEGO_Citizens>
